@@ -28,3 +28,7 @@
 * Its a network card attached to your EC2 instance
 * if you’re running on EC2—the default interface, eth0, is attached to an ENI that was created when you launched the instance, and is used to handle all traffic sent and received from the instance.
 * You’re not limited to just one network interface though—attaching a secondary network interface allows you to connect your EC2 instance to two networks at once, which can be very useful when designing your network architecture. You can use them to host load balancers, proxy servers, and NAT servers on an EC2 instance, routing traffic from one subnet to another.
+
+## EC2 Hibernate
+* On hibernation, data of RAM is copied into EBS, and when the system starts, all RAM data is restored, so start time is faster
+* From OS perspective, it is never stopped when you do hibernation
