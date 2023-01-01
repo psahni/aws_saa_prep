@@ -24,3 +24,7 @@
   * A partition fail can affect ec2 instances on same parti. but does not affect the other ones
   * Big data apps like Kafka, Cassandra, HDFS
 
+## Elastic netwrok interfaces
+* Its a network card attached to your EC2 instance
+* if you’re running on EC2—the default interface, eth0, is attached to an ENI that was created when you launched the instance, and is used to handle all traffic sent and received from the instance.
+* You’re not limited to just one network interface though—attaching a secondary network interface allows you to connect your EC2 instance to two networks at once, which can be very useful when designing your network architecture. You can use them to host load balancers, proxy servers, and NAT servers on an EC2 instance, routing traffic from one subnet to another.
