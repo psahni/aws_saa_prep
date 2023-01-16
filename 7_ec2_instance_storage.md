@@ -25,3 +25,32 @@
 
 
 
+## AMI Overview
+* It contains all information required to launch an instance
+* We can create AMI from EC2 instance
+* We modify an EC2 instance, and create AMI from it
+* Pre-configured templates that can be use to launch one or more instances
+* An AMI includes the following:
+
+    * A template for the root volume for the instance (for example, an operating system, an application server, and applications)
+    * Launch permissions that control which AWS accounts can use the AMI to launch instances
+    * A block device mapping that specifies the volumes to attach to the instance when it's launched
+
+## EC2 instance store
+* It's a high performance hardware disk
+* Better I/O performance then EBS volumes
+* Good for buffering and caching data
+
+
+## EBS Volume Types
+* 6 types of EBS Volumes
+  * gp2/gp3, io1/io2, st1, sc1
+* EBS hard disks can not be a boot volume (125TB - 16 TB)
+* Throughput optimzed HDD:- Big Data, Data warehouses, Log processing 
+* Cold HDD - archived data 
+   * For data that is infrequently accessed,  Where low cost is imp. 
+ * For exam purpose, we only need to know the differences (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)
+
+- Multple EC2 instances can be attached to one EBS
+- EBS multi attach:- Upto 16EC2 instances at a time
+
