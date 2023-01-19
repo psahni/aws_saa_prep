@@ -51,6 +51,13 @@
    * For data that is infrequently accessed,  Where low cost is imp. 
  * For exam purpose, we only need to know the differences (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)
 
-- Multple EC2 instances can be attached to one EBS
+* Multiattach 
+- Multple EC2 instances can be attached to one EBS in same AZ
 - EBS multi attach:- Upto 16EC2 instances at a time
+
+## EBS Encryption
+* First we create EBS volume, then we create snapshot. This snapshot will be un encruypted.
+* We copy the snapshot, and then we get the option to encrypt the snapshot.
+* Then from that encrypted snapshot, we create an encrypted volume.
+* We can also directly create encrypted volume from first snapshot 
 
