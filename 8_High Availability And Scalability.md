@@ -14,3 +14,6 @@
 ----------------------------------------
 
 ### High Av means running the instances in the multiple Availability zones or data centers.
+
+### Load Balancer
+<img width="855" alt="image" src="https://user-images.githubusercontent.com/84832/217798903-7bf767b8-5c20-4bf8-aeb1-db3fca6bdc4d.png">
