@@ -29,3 +29,7 @@
   * If one of the EC2 in the target group goes down, ALB will only redirect to one that is UP
   * Edit Inbound security group rules of HTTP SG to allow traffic only from load balancer, for this, 
     assign the SG of load balancer to the HTTP security group.
+    
+### Network Load Balancer
+<img width="935" alt="image" src="https://user-images.githubusercontent.com/84832/219869728-48d682cf-fba3-4711-b0ef-010fb408031e.png">
+
