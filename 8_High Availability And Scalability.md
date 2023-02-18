@@ -17,3 +17,15 @@
 
 ### Load Balancer
 <img width="855" alt="image" src="https://user-images.githubusercontent.com/84832/217798903-7bf767b8-5c20-4bf8-aeb1-db3fca6bdc4d.png">
+
+
+* Application Load Balancer
+* Network Load Balancer
+* Gateway load balancer
+
+
+### Application Load Balancer
+  * When you create ALB, you create target groups, of EC2 instances, and link the target group with ALB
+  * If one of the EC2 in the target group goes down, ALB will only redirect to one that is UP
+  * Edit Inbound security group rules of HTTP SG to allow traffic only from load balancer, for this, 
+    assign the SG of load balancer to the HTTP security group.
