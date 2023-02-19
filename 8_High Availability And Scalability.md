@@ -57,9 +57,25 @@
 
 ### Cross Zone Load Balancing
 
+* Load Balancer hands on screenshot
 
+![20230219_191613](https://user-images.githubusercontent.com/84832/219952292-44482d9f-111f-4273-8104-666fed7fe16b.jpg)
 
- 
+ * CZLB is enabled by default for ALB, it can be turned off from target group setting.
+ * CZLB is disabled by default for gateway and network load balancers
 
+### ELB - SSL Certificates
+
+* TLS is a new version of SSL, but people still refer to as SSL
+* SNI (Server name indication) - How load multiple SSL on one server, to serve multiple websites
+* To configure in ALB, we just need to add a listener
+* Import the certificate, and it will imported to ACM (Amazon certificate managment)
+
+### ELB - Connection Draining / Deregistration Delay
+* EC2 instance is set on Draining, then ALB will send requests to other EC2 instances.
+* It will handle the existing requests before draining out.
+
+### Autoscaling
+* 
 
 
