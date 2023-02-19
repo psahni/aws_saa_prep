@@ -33,3 +33,18 @@
 ### Network Load Balancer
 <img width="935" alt="image" src="https://user-images.githubusercontent.com/84832/219869728-48d682cf-fba3-4711-b0ef-010fb408031e.png">
 
+* NLB has one static IP per AZ, supports assigning Elastic IP
+* You need to modify SG in order to allow traffic from NLB, then the EC2 instances in the target group will show in healthy state
+
+### Gateway load Balancer
+
+* 3rd party virtual appliances
+* You want to inspect the traffic before it goes in.
+* To detect intrusion detection
+* First traffic goes through GLB, virtual appliances like Firewall and then to Target groups
+* Operates at IP layer
+* GENEVE protocol 
+
+
+
+
