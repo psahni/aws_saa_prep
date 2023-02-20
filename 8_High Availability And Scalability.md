@@ -36,6 +36,10 @@
 * NLB has one static IP per AZ, supports assigning Elastic IP
 * You need to modify SG in order to allow traffic from NLB, then the EC2 instances in the target group will show in healthy state
 
+```
+Only Network Load Balancer provides both static DNS name and static IP. While, Application Load Balancer provides a static DNS name but it does NOT provide a static IP. The reason being that AWS wants your Elastic Load Balancer to be accessible using a static endpoint, even if the underlying infrastructure that AWS manages changes.
+```
+
 ### Gateway load Balancer
 
 * 3rd party virtual appliances
@@ -76,6 +80,13 @@
 * It will handle the existing requests before draining out.
 
 ### Autoscaling
+* Based on metric like Avg CPU time, alarms, autoscaling group can be scaled out(add) or sclaed in (remove)
+* ASG is linked to target group, which is connected to ALB
+* A target group has one or more EC2 instances
+* ASG scales in and scales out as per settings in the details section
+* Max capacity, Desired capacity, Min capacity are the attributes
 * 
+
+
 
 
