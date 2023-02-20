@@ -30,6 +30,14 @@
   * Edit Inbound security group rules of HTTP SG to allow traffic only from load balancer, for this, 
     assign the SG of load balancer to the HTTP security group.
     
+```
+When using an Application Load Balancer to distribute traffic to your EC2 instances, the IP address you'll receive requests from will be the ALB's private IP addresses. To get the client's IP address, ALB adds an additional header called "X-Forwarded-For" contains the client's IP address.
+```
+
+```
+ALBs can route traffic to different Target Groups based on URL Path, Hostname, HTTP Headers, and Query Strings.
+```
+
 ### Network Load Balancer
 <img width="935" alt="image" src="https://user-images.githubusercontent.com/84832/219869728-48d682cf-fba3-4711-b0ef-010fb408031e.png">
 
@@ -37,7 +45,9 @@
 * You need to modify SG in order to allow traffic from NLB, then the EC2 instances in the target group will show in healthy state
 
 ```
-Only Network Load Balancer provides both static DNS name and static IP. While, Application Load Balancer provides a static DNS name but it does NOT provide a static IP. The reason being that AWS wants your Elastic Load Balancer to be accessible using a static endpoint, even if the underlying infrastructure that AWS manages changes.
+* Only Network Load Balancer provides both static DNS name and static IP. While, Application Load Balancer provides a static DNS name but it does NOT provide a static IP. 
+* The reason being that AWS wants your Elastic Load Balancer to be accessible using a static endpoint, even if the underlying infrastructure that AWS manages changes.
+* Network Load Balancer has one static IP address per AZ and you can attach an Elastic IP address to it. Application Load Balancers and Classic Load Balancers have a static DNS name.
 ```
 
 ### Gateway load Balancer
@@ -59,6 +69,11 @@ Only Network Load Balancer provides both static DNS name and static IP. While, A
 * Name of cookies set by load balancer is fixed
 * Custom cookie sent by the client is set through target group settings of EC2
 
+```
+* The following cookie names are reserved by the ELB (AWSALB, AWSALBAPP, AWSALBTG).
+
+```
+
 ### Cross Zone Load Balancing
 
 * Load Balancer hands on screenshot
@@ -67,6 +82,8 @@ Only Network Load Balancer provides both static DNS name and static IP. While, A
 
  * CZLB is enabled by default for ALB, it can be turned off from target group setting.
  * CZLB is disabled by default for gateway and network load balancers
+ * When Cross-Zone Load Balancing is enabled, ELB distributes traffic evenly across all registered EC2 instances in all AZs.
+ 
 
 ### ELB - SSL Certificates
 
@@ -85,7 +102,12 @@ Only Network Load Balancer provides both static DNS name and static IP. While, A
 * A target group has one or more EC2 instances
 * ASG scales in and scales out as per settings in the details section
 * Max capacity, Desired capacity, Min capacity are the attributes
-* 
+
+```
+You can configure the Auto Scaling Group to determine the EC2 instances' health based on Application Load Balancer Health Checks instead of EC2 Status Checks (default). 
+When an EC2 instance fails the ALB Health Checks, it is marked unhealthy and will be terminated while the ASG launches a new EC2 instance.
+
+```
 
 
 
