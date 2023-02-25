@@ -24,3 +24,6 @@
 * Faster and optimized than PG Sql and Mysql.
 * Multiple Read Replicas with loan balancer, with one master DB.
 * Automatic failover, security, Backup, Monitoring, Backtrack
+* An Aurora DB cluster can contain up to 15 Aurora Replicas. The Aurora Replicas can be distributed across the Availability Zones that a DB cluster spans within an AWS Region.
+* Replication - https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Replication.html
+
