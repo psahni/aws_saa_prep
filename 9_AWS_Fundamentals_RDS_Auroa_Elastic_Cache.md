@@ -65,3 +65,20 @@
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/84832/221413493-223a7401-2ae3-42a4-84e8-1c3b9a8e74bb.png">
 
+
+### RDS Databases ports:
+
+```
+PostgreSQL: 5432
+
+MySQL: 3306
+
+Oracle RDS: 1521
+
+MSSQL Server: 1433
+
+MariaDB: 3306 (same as MySQL)
+
+Aurora: 5432 (if PostgreSQL compatible) or 3306 (if MySQL compatible)
+```
+
