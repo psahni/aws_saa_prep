@@ -10,6 +10,10 @@
 * Disaster Recovery - Create a standby database, with master database
 * No manual intervention
 * Read Replicas can be setup as Multi AZ for DR
+* Which RDS (NOT Aurora) feature when used does not require you to change the SQL connection string?
+    * Multi-AZ keeps the same connection string regardless of which database is up - Correct Ans
+    * Read replicas - In correct ans
+
 
 #### Important for exam - How to go from Single AZ to multi AZ
 * We just need to modify db settings and enable it
@@ -33,6 +37,7 @@
 * Run Analytical queries on some read replica
 * Aurora Multi master - In case of FO (Failover), every node will act as a R/W node, instead RR
 * Aurora Global Database, 1 primary R/W
+* <b>Aurora Global Databases</b> allows you to have an Aurora Replica in another AWS Region, with up to 5 secondary regions. (Quiz)
 * 5 Cross Regions, where you can have Read Replica, with upto 16 RR per region
 * <b> Cross Region replication takes less one second </b>
 *  If you plan to Stop RDS for long time, then take the Snapshot and restore it when you need it
@@ -52,6 +57,8 @@
 * Reduce the fail over time by 66%
 * Enforce IAM auth, stores the credentials in AWS Secret Manager
 * It is not public. It is accessed via VPC.
+* This reduces the failover time by up to 66% and keeps connection actives for your applications (Quiz)
+
 
 ### Amazon Elastic Cache Overview
 * RDS is for managed RDBMS
@@ -60,6 +67,9 @@
 * Cache are high performance and low latency
 * Redis has Data durability and high availability
 * No Backup and restore in Memcache (Non persistant)
+* Sticky Session Alternative:-
+  * Storing Session Data in ElastiCache is a common pattern to ensuring different EC2 instances can retrieve your user's state if needed.
+
 
 ### Use case Redis
 
@@ -81,4 +91,8 @@ MariaDB: 3306 (same as MySQL)
 
 Aurora: 5432 (if PostgreSQL compatible) or 3306 (if MySQL compatible)
 ```
+
+Quiz:- Your development team would like to run a version of the application in a scaled-down application with the ability to perform some heavy workload on a need-basis. Most of the time, the application will be unused.
+Ans:- Aurora Serverless
+
 
