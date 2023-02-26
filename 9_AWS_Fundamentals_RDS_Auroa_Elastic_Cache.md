@@ -20,11 +20,12 @@
 * Oracle and SQL server
 
 
-### Aurora DB (Imp)
+### Aurora DB (IMP)
 * Faster and optimized than PG Sql and Mysql.
 * Multiple Read Replicas with loan balancer, with one master DB.
 * Automatic failover, security, Backup, Monitoring, Backtrack
-* An Aurora DB cluster can contain up to 15 Aurora Replicas. The Aurora Replicas can be distributed across the Availability Zones that a DB cluster spans within an AWS Region.
+* An Aurora DB cluster can contain up to 15 Aurora Replicas. 
+* The Aurora Replicas can be distributed across the Availability Zones that a DB cluster spans within an AWS Region.
 * Replication - https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Replication.html
 * Read Replica and Write Replica
 * Some read replica's can be bigger
@@ -34,4 +35,7 @@
 * Aurora Global Database, 1 primary R/W
 * 5 Cross Regions, where you can have Read Replica, with upto 16 RR per region
 * <b> Cross Region replication takes less one second </b>
-*  
+*  If you plan to Stop RDS for long time, then take the Snapshot and restore it when you need it
+*  Automated Backups - Trans logs are backed by RDS every 5 mins
+
+
