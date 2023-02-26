@@ -43,4 +43,14 @@
 * Whenever write operation is performed, it is synced to other replicas
 
 ### RDS and Aurora Security
-* 
+* To encrypt an un-encrypted DB, you have to take snapshot and then restore
+* IAM authentication also possible
+* Audit logs can be enabled and sent to cloud watch for longer retention
+
+### RDS Proxy
+* By RDS proxy, database efficiency is increased, by reducing the stress on DB resources (CPU, RAM) and minimise open connections (and timeouts)
+* Reduce the fail over time by 66%
+* Enforce IAM auth, stores the credentials in AWS Secret Manager
+* It is not public. It is accessed via VPC.
+
+### Amazon Elastic Cache Overview
