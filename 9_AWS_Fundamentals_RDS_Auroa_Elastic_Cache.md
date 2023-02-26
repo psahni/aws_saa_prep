@@ -26,4 +26,12 @@
 * Automatic failover, security, Backup, Monitoring, Backtrack
 * An Aurora DB cluster can contain up to 15 Aurora Replicas. The Aurora Replicas can be distributed across the Availability Zones that a DB cluster spans within an AWS Region.
 * Replication - https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Replication.html
-
+* Read Replica and Write Replica
+* Some read replica's can be bigger
+* Read replicas can defined custom end point
+* Run Analytical queries on some read replica
+* Aurora Multi master - In case of FO (Failover), every node will act as a R/W node, instead RR
+* Aurora Global Database, 1 primary R/W
+* 5 Cross Regions, where you can have Read Replica, with upto 16 RR per region
+* <b> Cross Region replication takes less one second </b>
+*  
