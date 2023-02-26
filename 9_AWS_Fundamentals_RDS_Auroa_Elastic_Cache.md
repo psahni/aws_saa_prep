@@ -38,4 +38,9 @@
 *  If you plan to Stop RDS for long time, then take the Snapshot and restore it when you need it
 *  Automated Backups - Trans logs are backed by RDS every 5 mins
 
+### Database Clustering
+* You create one Primary DB, which performs Read/Write and other replicas who only do read.
+* Whenever write operation is performed, it is synced to other replicas
 
+### RDS and Aurora Security
+* 
