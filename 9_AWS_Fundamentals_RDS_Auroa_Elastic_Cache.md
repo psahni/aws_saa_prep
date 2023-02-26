@@ -54,3 +54,9 @@
 * It is not public. It is accessed via VPC.
 
 ### Amazon Elastic Cache Overview
+* RDS is for managed RDBMS
+* Elastic cache is for Memcache or Redis
+* For read intensive workload, we can offload DB and use cache
+* Cache are high performance and low latency
+* Redis has Data durability and high availability
+* No Backup and restore in Memcache (Non persistant)
