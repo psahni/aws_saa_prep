@@ -63,5 +63,5 @@
 
 ### Use case Redis
 
-<img width="940" alt="image" src="https://user-images.githubusercontent.com/84832/221413493-223a7401-2ae3-42a4-84e8-1c3b9a8e74bb.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/84832/221413493-223a7401-2ae3-42a4-84e8-1c3b9a8e74bb.png">
 
