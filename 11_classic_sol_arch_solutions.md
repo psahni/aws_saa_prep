@@ -20,6 +20,9 @@
 * EBS does not allow you to share data, in case of multi AZ, so use EFS with ENI.
 * EBS is cheaper
 * Aurora allows you to create READ replicas very easily. Scaling is easy.
+* EFS is a network file system (NFS) that allows you to mount the same file system to 100s of EC2 instances. 
+  Storing software updates on an EFS allows each EC2 instance to access them.
+
 
 
 <img width="1105" alt="image" src="https://user-images.githubusercontent.com/84832/224546321-1f1293c4-6bb2-4791-9720-fe69d91f62c6.png">
@@ -27,3 +30,7 @@
 * Elastic Bean Stalk is the developer friendly way to deploy same kind of stack more than
 * Most stacks are same -> Elastic Load Balancer +. Auto Scaling Group
 * It is a hybrid approach - AMI + User Data
+
+
+* Golden AMI is an image that contains all your software installed and configured so that future EC2 instances can boot up quickly from that AMI.
+
