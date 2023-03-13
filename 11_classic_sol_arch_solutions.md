@@ -34,3 +34,6 @@
 
 * Golden AMI is an image that contains all your software installed and configured so that future EC2 instances can boot up quickly from that AMI.
 
+
+<img width="730" alt="image" src="https://user-images.githubusercontent.com/84832/224598559-d0c707a9-6a26-4a47-90d9-99d051c5dd93.png">
+
