@@ -67,6 +67,7 @@ spec:
 #### Static Pods
 Static Pods are managed directly by the kubelet daemon on a specific node, without the API server observing them. Whereas most Pods are managed by the control plane (for example, a Deployment), for static Pods, the kubelet directly supervises each static Pod (and restarts it if it fails).
 
+<a href='https://kubernetes.io/docs/concepts/workloads/pods/'>LINK</a>
 
 
 
