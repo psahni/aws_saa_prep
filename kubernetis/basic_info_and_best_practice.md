@@ -34,4 +34,4 @@ This interacts with the cloud provider (in cloud-based clusters), managing resou
 * You should use managed Kubernetes if you can. This is the best option for most businesses in terms of cost, overhead, and quality.
 
 * If managed services aren’t an option, consider using turnkey services as a good compromise.
-Don’t self-host your cluster without sound business reasons. If you do self-host, don’t underestimate the engineering time involved for the initial setup and ongo‐ ing maintenance overhead.
+Don’t self-host your cluster without sound business reasons. If you do self-host, don’t underestimate the engineering time involved for the initial setup and ongoing maintenance overhead.
