@@ -18,6 +18,7 @@ Domain 4: Design Cost optimized Architecture
 Free Tier Account
 techlead.ps@gmail.com
 
+Billing Alerts
 
 Activate IAM Access
 https://us-east-1.console.aws.amazon.com/billing/home#/account
@@ -32,8 +33,8 @@ https://us-east-1.console.aws.amazon.com/billing/home#/budgets/overview
 IAM Account Alias -> GO to IAM
 https://techlead99.signin.aws.amazon.com/console
 
-techlead99 is my Account ID
-prashant is my IAM user
+* techlead99 is my Account ID
+* prashant is my IAM user 
 
 Download Material
 https://digitalcloud.training/aws-csaa-course-downloads/
@@ -43,3 +44,7 @@ https://dct-csaa-course-download.s3.amazonaws.com/AWS+CSAA+Exam+Cram.pdf
 
 Slides
 https://dct-csaa-course-download.s3.amazonaws.com/AWS+Certified+Solutions+Architect+Associate+Slides.pdf
+
+
+IAM Cheet Sheet
+https://digitalcloud.training/aws-iam/
