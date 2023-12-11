@@ -1,8 +1,6 @@
 SAA - 03 Exam
-
 Exam time - 130 mins
-65 questions
-$150
+65 questions - $150
 
 100-1000
 Min pass 720
@@ -48,3 +46,14 @@ https://dct-csaa-course-download.s3.amazonaws.com/AWS+Certified+Solutions+Archit
 
 IAM Cheet Sheet
 https://digitalcloud.training/aws-iam/
+
+SSH into EC2 in Private Subnet
+https://digitalcloud.training/ssh-into-ec2-in-private-subnet/
+
+
+
+Ubuntu on Windows
+https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview
+
+Solution Arch Interview Questions
+https://www.youtube.com/watch?v=vf9xTPtxtmQ
