@@ -57,3 +57,7 @@ https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview
 
 Solution Arch Interview Questions
 https://www.youtube.com/watch?v=vf9xTPtxtmQ
+
+Cheet Sheets
+https://digitalcloud.training/amazon-vpc/
+https://digitalcloud.training/amazon-ec2/

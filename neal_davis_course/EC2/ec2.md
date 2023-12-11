@@ -113,7 +113,10 @@ Network Interfaces
 When choose subnet while creating a EC2 instance, we attach an adaptor to it
 Multiple adaptors can be attached to a single EC2 instance, but they have to be in same AZ
 Subnet can be private and public.
+
 ENI (Elastic Network interface) is the most adaptor and can be used with all instance types
+
+EFA is good for High Performance Computing, MPI and ML use cases, tightly coupled applications and can be used with all instance types.
 
 --
 Public, Private and Elastic IP addresses
