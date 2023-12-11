@@ -2,7 +2,8 @@
 ## Elastic Block store (EBS)
 * It is a network drive you can attach to your instance(EC2) while they run
 * It allows your instance to persist data, even after their termination
-* it can be mounted to one instance at a time
+* You can attach multiple EBS volumes to a single instance. The volume and instance must be in the same Availability Zone. Depending on the volume and instance types, you can use Multi-Attach to mount a volume to multiple instances at the same time.
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes.html
 * They are bound to a specific availability zone
 * We can use the analogy network USB stick for EBS
 * By default the root EBS volume is deleted on the termination of the EC2 instance
