@@ -61,3 +61,4 @@ https://www.youtube.com/watch?v=vf9xTPtxtmQ
 Cheet Sheets
 https://digitalcloud.training/amazon-vpc/
 https://digitalcloud.training/amazon-ec2/
+https://digitalcloud.training/aws-organizations/
