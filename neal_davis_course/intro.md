@@ -40,7 +40,7 @@ https://digitalcloud.training/aws-csaa-course-downloads/
 Exam Cram Guide
 https://dct-csaa-course-download.s3.amazonaws.com/AWS+CSAA+Exam+Cram.pdf
 
-Slides
+** Slides
 https://dct-csaa-course-download.s3.amazonaws.com/AWS+Certified+Solutions+Architect+Associate+Slides.pdf
 
 
@@ -62,3 +62,4 @@ Cheet Sheets
 https://digitalcloud.training/amazon-vpc/
 https://digitalcloud.training/amazon-ec2/
 https://digitalcloud.training/aws-organizations/
+https://digitalcloud.training/aws-direct-connect/
