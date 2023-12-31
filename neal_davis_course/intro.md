@@ -63,3 +63,18 @@ https://digitalcloud.training/amazon-vpc/
 https://digitalcloud.training/amazon-ec2/
 https://digitalcloud.training/aws-organizations/
 https://digitalcloud.training/aws-direct-connect/
+
+https://digitalcloud.training/amazon-route-53/
+https://digitalcloud.training/amazon-cloudfront/
+https://digitalcloud.training/aws-global-accelerator/
+
+https://digitalcloud.training/amazon-ecs-and-eks/
+
+
+https://digitalcloud.training/amazon-api-gateway/
+https://digitalcloud.training/aws-application-integration-services/
+https://digitalcloud.training/amazon-cloudwatch/
+https://digitalcloud.training/amazon-api-gateway/
+
+Database and analytics cheet sheet
+https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/28712488#reviews
