@@ -78,3 +78,7 @@ https://digitalcloud.training/amazon-api-gateway/
 
 Database and analytics cheet sheet
 https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/28712488#reviews
+
+
+Deployment And Management
+https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/28712490#reviews
