@@ -82,3 +82,6 @@ https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-o
 
 Deployment And Management
 https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/28712490#reviews
+
+Security
+https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/28712498#notes
