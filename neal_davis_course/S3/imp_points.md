@@ -29,9 +29,6 @@ Provides eventual consistency for overwrite PUTS and DELETES (takes time to prop
 * You cannot create nested buckets.
 * Objects stored in a bucket will never leave the region in which they are stored unless you move them to another region or enable cross-region replication.
 
-
-
-
 S3 data is made up of:
 
     Key (name).
@@ -41,8 +38,25 @@ S3 data is made up of:
     Access Control Lists.
 
 
+# Storage Classes
+There are six S3 storage classes.
+
+- S3 Standard (durable, immediately available, frequently accessed).
+- S3 Intelligent-Tiering (automatically moves data to the most cost-effective tier).
+
+- S3 Standard-IA (durable, immediately available, infrequently accessed).
+- S3 One Zone-IA (lower cost for infrequently accessed data with less resilience).
+
+- S3 Glacier (archived data, retrieval times in minutes or hours).
+- S3 Glacier Deep Archive (lowest cost storage class for long term retention).
+
+
 Storage Class Analysis
     Analyzes storage access patterns to help you decide when to transition the right data to the right storage class.
+
+    Each object in Amazon S3 has a storage class associated with it. For example, if you list the objects in an S3 bucket, the console shows the storage class for all the objects in the list. Amazon S3 offers a range of storage classes for the objects that you store. You choose a class depending on your use case scenario and performance access requirements. All of these storage classes offer high durability.
+
+
 
 Storage Lens
     Delivers organization-wide visibility into object storage usage, activity trends, and makes actionable recommendations to improve cost-efficiency and apply data protection best practices.
@@ -61,14 +75,8 @@ Ephemeral Data Store
     EC2 Instance Store, Memcached (Elasticache)
 
 
-# Storage Classes
-There are six S3 storage classes.
 
-- S3 Standard (durable, immediately available, frequently accessed).
-- S3 Intelligent-Tiering (automatically moves data to the most cost-effective tier).
+* What type of consistency model is provided in Amazon S3 when you upload a new version of an object?
 
-- S3 Standard-IA (durable, immediately available, infrequently accessed).
-- S3 One Zone-IA (lower cost for infrequently accessed data with less resilience).
 
-- S3 Glacier (archived data, retrieval times in minutes or hours).
-- S3 Glacier Deep Archive (lowest cost storage class for long term retention).
+- You get strong read after write consistency for all applications. You used to only get eventual consistency, but AWS made an update in late 2020.

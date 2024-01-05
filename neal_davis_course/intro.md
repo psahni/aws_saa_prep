@@ -70,6 +70,8 @@ https://digitalcloud.training/aws-global-accelerator/
 
 https://digitalcloud.training/amazon-ecs-and-eks/
 
+S3
+https://digitalcloud.training/amazon-s3-and-glacier/
 
 https://digitalcloud.training/amazon-api-gateway/
 https://digitalcloud.training/aws-application-integration-services/
