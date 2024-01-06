@@ -87,3 +87,7 @@ Important Lesson, but its ok to skip for re watch
 
 Exams Cram re watch, Arch patterns re-watch plus do research on it.
 
+
+
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-load-balancer.html
+https://aws.amazon.com/rds/features/multi-az/

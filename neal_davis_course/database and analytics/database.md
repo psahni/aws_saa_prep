@@ -10,7 +10,6 @@ Aurora
 
     A new application requires a database that can allow writes to DB instances in multiple availability zones with read after write consistency. Which solution meets these requirements?
 
-
     Amazon Aurora Multi-Master adds the ability to scale out write performance across multiple Availability Zones and provides configurable read after write consistency.
 
     Global DB:- Cross Region Availability
@@ -105,3 +104,16 @@ You can use Crawler to populate the AWS Glue
 
 https://docs.aws.amazon.com/glue/latest/dg/how-it-works.html
 
+
+
+### DMS
+
+References:
+
+https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-on-premises-microsoft-sql-server-database-to-amazon-rds-for-sql-server.html
+
+https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.html
+
+https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.html
+
+https://aws.amazon.com/dms/schema-conversion-tool/

@@ -117,11 +117,11 @@ Identity providers and federation
 
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html
 
----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------
  Exam cram (Watch again)
  Most of the content is common sense, so just watch normally
 
----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------
 Arch Patterns
 
 * What is the best practice for applying permissions to many users who perform the same job role?
@@ -134,5 +134,10 @@ Add to group and assign policy
 
 
 
+### Secure DB with IAM Role
+
+The best way to secure this solution is to get rid of the credentials completely by using an IAM role instead. The IAM role can be assigned permissions to the database instance and can be attached to the EC2 instance. The instance will then obtain temporary security credentials from AWS STS which is much more secure.
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html
 
 

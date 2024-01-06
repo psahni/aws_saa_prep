@@ -14,3 +14,34 @@
     - You can attach multiple EBS to your EC2
     - By default, the root EBS vol is delete when you terminate an instance
     - Non boot vols are not deleted on termination
+
+
+### Do we take snapshot of root vol also?
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html
+
+(Optional) By default, Amazon EBS creates a snapshot of the instance's root volume. If you do not want to create a snapshot of the instance's root volume, select Exclude root volume.
+
+### How do I unencrypt an encrypted EBS volume in Linux?
+You can copy an encrypted volume to a new, unencrypted volume using a temporary Amazon Elastic Compute Cloud (Amazon EC2) Linux instance. You can then attach the unencrypted volume to your original instance.
+
+### Automated backup
+    - DLM (Data life cycle manager)
+
+### Copy an EBS volume from the us-west-1a availability zone to an instance in the us-west-2b availability zone?
+
+Create a snapshot of the EBS volume in us-west-1a. Create a new volume in us-west-2b from the snapshot.
+This is the best method for copying an EBS volume between AZs. Remember, snapshots are stored on Amazon S3 which stores data within a region, not an AZ.
+
+### How Hibernation works
+
+When you hibernate an instance, Amazon EC2 signals the operating system to perform hibernation (suspend-to-disk). Hibernation saves the contents from the instance memory (RAM) to your Amazon Elastic Block Store (Amazon EBS) root volume. Amazon EC2 persists the instance's EBS root volume and any attached EBS data volumes. When you start your instance:
+
+  • The EBS root volume is restored to its previous state
+  • The RAM contents are reloaded
+  • The processes that were previously running on the instance are resumed
+  • Previously attached data volumes are reattached and the instance retains its instance ID
+
+### Trivia: How to have max I/O for a video production company
+
+The best I/O performance can be achieved by using instance store volumes for the video processing. This is safe to use for use cases where the data can be recreated from the source files so this is a good use case.
+
