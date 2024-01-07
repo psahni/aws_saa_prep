@@ -108,7 +108,7 @@ Spread -> Instances located on diff hardwares
     Small num of critical instances that should be kept separate from each other
 
 --
-Network Interfaces
+### Network Interfaces
 
 When choose subnet while creating a EC2 instance, we attach an adaptor to it
 Multiple adaptors can be attached to a single EC2 instance, but they have to be in same AZ

@@ -1,6 +1,10 @@
+### Scaling based on Amazon SQS
 
+You can scale your auto scaling group in response to the load in SQS queues
 
-# Trivia: How to assign permssion to AWS account to send messages to SQS queue
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html
+
+### Trivia: How to assign permssion to AWS account to send messages to SQS queue
 
 Update the permission policy on the SQS queue to grant the sqs:SendMessage permission to the partner’s AWS account
 

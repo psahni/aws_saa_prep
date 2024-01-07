@@ -14,8 +14,9 @@ A. Amazon FSx for Lustre.
 
 https://digitalcloud.training/aws-storage-gateway/
 
-AWS Storage Gateway supports three storage interfaces: file, volume, and tape.
+* AWS Storage Gateway supports three storage interfaces: file, volume, and tape.
 
+FSx is for DFS namespaces and DFS replication
 https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-on/learn/lecture/28619108#overview
 
 
