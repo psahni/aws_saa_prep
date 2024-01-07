@@ -8,7 +8,8 @@
 
 Amazon Elastic File System (Amazon EFS) provides a simple, scalable, fully managed elastic NFS file system for use with AWS Cloud services and on-premises resources. It is built to scale on demand to petabytes without disrupting applications, growing and shrinking automatically as you add and remove files, eliminating the need to provision and manage capacity to accommodate growth.
 
-
+- NFS protocol is used to mount the file system
+-  You can use an EFS file system as a common data source for workloads and applications running on multiple instances
 
 - You can control access to files and directories with POSIX-compliant user and group-level permissions.
 - POSIX (group and user) permissions
@@ -27,3 +28,5 @@ Amazon Elastic File System (Amazon EFS) provides a simple, scalable, fully manag
 
 Amazon EC2 Nitro-based systems are not required for this solution but do offer advantages in performance that will help to maximize the usage of the EBS volume. For the data storage volume an i01 volume can support up to 64,000 IOPS so a single volume with sufficient capacity (50 IOPS per GiB) can be deliver the requirements.
 
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html

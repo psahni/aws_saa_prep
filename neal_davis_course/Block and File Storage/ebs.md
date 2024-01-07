@@ -15,6 +15,14 @@
     - By default, the root EBS vol is delete when you terminate an instance
     - Non boot vols are not deleted on termination
 
+### EBS Volumes
+
+* Gp2
+General Purpose SSD (gp2) volumes offer cost-effective storage that is ideal for a broad range of workloads. These volumes deliver single-digit millisecond latencies and the ability to burst to 3,000 IOPS for extended periods of time.
+
+Between a minimum of 100 IOPS (at 33.33 GiB and below) and a maximum of 16,000 IOPS (at 5,334 GiB and above), baseline performance scales linearly at 3 IOPS per GiB of volume size
+
+The volume will provide a baseline performance of 750 IOPS
 
 ### Do we take snapshot of root vol also?
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html

@@ -28,3 +28,15 @@ You can set up CloudFront with origin failover for scenarios that require high a
 • Amazon Aurora Read Replicas can be used to serve read traffic which offloads requests from the main database.
 
 • On the frontend an Amazon CloudFront distribution can be placed in front of the ALB and this will cache content for better performance and also offloads requests from the backend.
+
+### Block countries to access the content due to copyright issues
+
+When a user requests your content, CloudFront typically serves the requested content regardless of where the user is located. If you need to prevent users in specific countries from accessing your content, you can use the CloudFront geo restriction feature to do one of the following:
+
+  • Allow your users to access your content only if they're in one of the countries on a whitelist of approved countries.
+
+  • Prevent your users from accessing your content if they're in one of the countries on a blacklist of banned countries.
+
+For example, if a request comes from a country where, for copyright reasons, you are not authorized to distribute your content, you can use CloudFront geo restriction to block the request.
+
+This is the easiest and most effective way to implement a geographic restriction for the delivery of content.

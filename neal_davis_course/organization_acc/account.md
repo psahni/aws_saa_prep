@@ -8,6 +8,8 @@ and link it with organization account which Manage AWS Account
 
 * We add aws account from aws organization account
 
+------------------------------------------------------------------------
+### Service Control Policy
 * Enable Service Control policies (SCP)
     FullAccessAws
 
@@ -16,6 +18,12 @@ and link it with organization account which Manage AWS Account
 * You need to assign IAM roles also
 
 * You can create a policy for example, that Dev account users will only able to launch t2 micro instance, but have full access. IAM role gives ability to perform action as per policy
+
+* To apply the restrictions across multiple member accounts you must use a Service Control Policy (SCP) in the AWS Organization. The way you would do this is to create a deny rule that applies to anything that does not equal the specific instance type you want to allow.
+
+. With IAM you need to apply the policy within each account rather than centrally so this would require much more effort.
+
+------------------------------------------------------------------------
 
 * A prod account is created underneath Dev account.
 
@@ -26,6 +34,12 @@ He created policy and assign it to role, to deny certain permissions.
 AWS Control Tower
     - Landing Zone
 
+------------------------------------------------------------------------
+
+
+###  AWS Resource Access Manager (RAM)
+
+ AWS Resource Access Manager (RAM) is a service that enables you to easily and securely share AWS resources with any AWS account or within your AWS Organization. It is not used for restricting access or permissions.
 
 
 

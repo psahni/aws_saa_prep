@@ -43,6 +43,7 @@ There are six S3 storage classes.
 
 - S3 Standard (durable, immediately available, frequently accessed).
 - S3 Intelligent-Tiering (automatically moves data to the most cost-effective tier).
+    (When company does not know how often a data will be accessed, or which data will be accessed most, and Architect needs to maintain the cost optimized)
 
 - S3 Standard-IA (durable, immediately available, infrequently accessed).
 - S3 One Zone-IA (lower cost for infrequently accessed data with less resilience).
@@ -50,6 +51,17 @@ There are six S3 storage classes.
 - S3 Glacier (archived data, retrieval times in minutes or hours).
 - S3 Glacier Deep Archive (lowest cost storage class for long term retention).
 
+-------
+
+### Storing logs for processing job for 24 hours
+A team are planning to run analytics jobs on log files each day and require a storage solution. The size and number of logs is unknown and data will persist for 24 hours only.
+
+
+S3 standard is the best choice in this scenario for a short term storage solution. In this case the size and number of logs is unknown and it would be difficult to fully assess the access patterns at this stage. Therefore, using S3 standard is best as it is cost-effective, provides immediate access, and there are no retrieval fees or minimum capacity charge per object.
+
+If it is infrequent or usage are unknown then S3 Intelligent-Tiering is good.
+
+-------
 
 Storage Class Analysis
     Analyzes storage access patterns to help you decide when to transition the right data to the right storage class.
