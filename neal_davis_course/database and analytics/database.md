@@ -46,10 +46,19 @@ Redis (Cluster OFF)
     Single Shard and multiple replicas across various Az's
 
 
+
 Amazon Dynamo DB
+
+    Amazon DynamoDB is a non-relational database that is managed for you. It can *scale without downtime* and with minimal operational overhead. DynamoDB can support the request rates and response times required by this solution and is often used in eCommerce solutions and for session state use cases.
+    
+
     - NoSql DB
     - Fully Managed
-    - DynamoDB Streams maintains a list of item level changes and can integrate with Lambda to create triggers.
+    - *DynamoDB Streams* maintains a list of item level changes and can integrate with Lambda to create triggers.
+
+Good To Read
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html
+
 
 DynamoDB Accelerator
     Micro sec latency
@@ -94,15 +103,21 @@ Amazon Athena
     Optimize columnar data store generation
     https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/
 
-AWS Glue
+### AWS Glue
+    ETL Service
     AWS Glue is a serverless data integration service that makes it easier to discover, prepare, move, and integrate data from multiple sources for analytics, machine learning (ML), and application development.
 
-AWS Glue uses other AWS services to orchestrate your ETL (extract, transform, and load) jobs to build data warehouses and data lakes and generate output streams. AWS Glue calls API operations to transform your data, create runtime logs, store your job logic, and create notifications to help you monitor your job runs. The AWS Glue console connects these services into a managed application, so you can focus on creating and monitoring your ETL work. The console performs administrative and job development operations on your behalf. You supply credentials and other properties to AWS Glue to access your data sources and write to your data targets.
+    AWS Glue uses other AWS services to orchestrate your ETL (extract, transform, and load) jobs to build data warehouses and data lakes and generate output streams. AWS Glue calls API operations to transform your data, create runtime logs, store your job logic, and create notifications to help you monitor your job runs. The AWS Glue console connects these services into a managed application, so you can focus on creating and monitoring your ETL work. The console performs administrative and job development operations on your behalf. You supply credentials and other properties to AWS Glue to access your data sources and write to your data targets.
 
 
 You can use Crawler to populate the AWS Glue
 
 https://docs.aws.amazon.com/glue/latest/dg/how-it-works.html
+
+
+### RDS Proxy
+
+Amazon RDS Proxy is a fully managed, highly available database proxy for Amazon Relational Database Service (RDS) that makes applications more scalable, more resilient to database failures, and more secure. Amazon RDS Proxy allows applications to pool and share connections established with the database, improving database efficiency and application scalability.
 
 
 

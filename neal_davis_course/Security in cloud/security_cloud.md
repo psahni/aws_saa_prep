@@ -47,6 +47,17 @@
     https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-mgmt
 
 
+### System Manager Parameter Store
+
+Problem: It is required that, aws lambda need to authenticate to RDS using credentials.
+
+Answer: In this case the scenario requires that credentials are used for authenticating to MySQL. The credentials need to be securely stored outside of the function code. *Systems Manager Parameter Store* provides secure, hierarchical storage for configuration data management and secrets management.
+
+Other way to authenticate using IAM role - AWSAuthenticationPlugin.
+ This is a great way to securely authenticate to RDS using IAM users or roles.
+
+
+
 ### AWS CloudHSM
     It's a hardware device.
     Cloud based hardware security module.

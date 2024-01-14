@@ -7,8 +7,18 @@
 
 
 
-Q. A High-Performance Computing (HPC) application requires a high-performance filesystem for running data analysis. The filesystem should transparently access source data stored as Amazon S3 objects. Which type of filesystem is ideal for this use case?
+### Amazon FSx for Lustre
+
+Q. A *High-Performance Computing (HPC)* application requires a high-performance filesystem for running data analysis. The filesystem should transparently access source data stored as Amazon S3 objects. Which type of filesystem is ideal for this use case?
+
 A. Amazon FSx for Lustre.
+
+* Amazon FSx for Lustre is ideal for high performance computing (HPC) workloads running on Linux instances. FSx for Lustre provides a native file system interface and works as any file system does with your Linux operating system.
+
+When linked to an Amazon S3 bucket, FSx for Lustre transparently presents objects as files, allowing you to run your workload without managing data transfer from S3.
+
+This solution provides all requirements as it enables *Linux* workloads to use the native file system interfaces and to use S3 for long-term and cost-effective storage of output files.
+
 
 
 

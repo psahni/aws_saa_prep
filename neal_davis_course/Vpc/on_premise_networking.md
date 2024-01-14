@@ -11,6 +11,13 @@ AWS Direct Connect links your internal network to an AWS Direct Connect location
 
 https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html
 
+
+### Direct connect is not suitable for migration with in a timeframe
+
+AWS Direct Connect provides a secure, reliable and private connection. However, lead times are often longer than 1 month so it cannot be used to migrate data within the timeframes. Therefore, it is better to use AWS Snowball to move the data and order a Direct Connect connection to satisfy the other requirement later on. In the meantime the organization can use an AWS VPN for secure, private access to their VPC.
+
+
+
 ### AWS Private Link
 
 
