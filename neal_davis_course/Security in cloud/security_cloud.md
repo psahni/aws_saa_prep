@@ -47,6 +47,15 @@
     https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-mgmt
 
 
+
+### Server Side Encryption with AWS KMS Managed Keys (SSE-KMS) (When Customer wants control over KeyAur)
+
+SSE-KMS requires that AWS manage the data key but you manage the customer master key (CMK) in AWS KMS. You can choose a customer managed CMK or the AWS managed CMK for Amazon S3 in your account.
+
+Customer managed CMKs are CMKs in your AWS account that you create, own, and manage. You have full control over these CMKs, including establishing and maintaining their key policies, IAM policies, and grants, enabling and disabling them, rotating their cryptographic material, adding tags, creating aliases that refer to the CMK, and scheduling the CMKs for deletion.
+
+
+
 ### System Manager Parameter Store
 
 Problem: It is required that, aws lambda need to authenticate to RDS using credentials.

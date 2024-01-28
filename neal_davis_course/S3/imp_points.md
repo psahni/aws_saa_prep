@@ -69,6 +69,11 @@ Storage Class Analysis
     Each object in Amazon S3 has a storage class associated with it. For example, if you list the objects in an S3 bucket, the console shows the storage class for all the objects in the list. Amazon S3 offers a range of storage classes for the objects that you store. You choose a class depending on your use case scenario and performance access requirements. All of these storage classes offer high durability.
 
 
+    ==> Though there is no minimum duration when storing data in S3 Standard, you cannot transition to Standard IA within 30 days. This can be seen when trying to create a lifecycle rule
+    ![Alt text](image-1.png)
+
+    ==> One zone IA is cheaper but offers lower availability. So if objects are required to be immediately available, then Standard IA is the right choice.
+
 
 Storage Lens
     Delivers organization-wide visibility into object storage usage, activity trends, and makes actionable recommendations to improve cost-efficiency and apply data protection best practices.

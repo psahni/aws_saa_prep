@@ -7,3 +7,13 @@ AWS DataSync can be used to move large amounts of data online between on-premise
 
 DataSync eliminates or automatically handles many of these tasks, including scripting copy jobs, scheduling and monitoring transfers, validating data, and optimizing network utilization. The source datastore can be Server Message Block (SMB) file servers.
 
+
+
+Q. A company needs to migrate a large quantity of data from an on-premises environment to Amazon S3. The company is connected via an "AWS Direct Connect (DX) connection". The company requires a fully managed solution that will keep the data private and automate and accelerate the replication of the data to AWS storage services.
+
+
+
+==> AWS DataSync can be used to automate and accelerate the replication of data to AWS storage services. Note that "Storage Gateway" is used for hybrid scenarios where servers need local access to data with various options for storing and synchronizing the data to AWS storage services. Storage Gateway does not accelerate replication of data.
+
+To deploy DataSync an agent must be installed. Then a task must be configured to replicated data to AWS. The task requires a connection to a service endpoint. To keep the data private and send it across the DX connection, a VPC endpoint should be used.
+

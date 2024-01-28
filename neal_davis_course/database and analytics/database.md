@@ -29,7 +29,11 @@ Mysql read replics can be cross region
 Global Db
     Cross region cluster
 
-Aurora Serverless
+### Aurora Serverless
+Amazon Aurora Serverless is an on-demand, auto-scaling configuration for Amazon Aurora. The database automatically starts up, shuts down, and scales capacity up or down based on application needs. This is an ideal database solution for infrequently-used applications.
+
+
+
 Aws RDS Proxy
 
 If you need full control, then RDS should not be used
@@ -78,6 +82,8 @@ Amazon Redshift
     3 copies
     Cont. backups
     Relational DB
+    Complex Queries
+    Repeat queries - Cache result (Team of scientists..)
 
 Elastic Map Reduce
     Big Data

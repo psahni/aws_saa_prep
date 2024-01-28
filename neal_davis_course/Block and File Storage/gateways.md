@@ -19,7 +19,7 @@ When linked to an Amazon S3 bucket, FSx for Lustre transparently presents object
 
 This solution provides all requirements as it enables *Linux* workloads to use the native file system interfaces and to use S3 for long-term and cost-effective storage of output files.
 
-
+Amazon FSx works "natively" with Amazon S3, letting you transparently access your S3 objects as files on Amazon FSx to run analyses for hours to months.
 
 
 https://digitalcloud.training/aws-storage-gateway/

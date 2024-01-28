@@ -12,3 +12,5 @@ This means it will intelligently route traffic to the closest point of presence 
 * Seamless failover
 
 Seamless failover is ensured as AWS Global Accelerator uses 'anycast IP address' which means the IP does not change when failing over between regions so there are no issues with client caches having incorrect entries that need to expire.
+
+"Static Ip addresses are exposed to users"

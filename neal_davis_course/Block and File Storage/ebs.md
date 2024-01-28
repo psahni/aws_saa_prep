@@ -11,6 +11,7 @@
     - Io1 and Io2
     - Throughput opti HDD - st1 (Used for Big Data), 125 GB - 16 TB
     - IOPS is very low for st1 and sc1 types HDD. Save money
+    - There is no IOPS SLA for HDD volumes
     - You can attach multiple EBS to your EC2
     - By default, the root EBS vol is delete when you terminate an instance
     - Non boot vols are not deleted on termination
