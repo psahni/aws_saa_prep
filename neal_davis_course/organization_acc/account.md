@@ -1,3 +1,4 @@
+### AWS Organiztion
 * You can create multiple AWS account one for production and one for development
 and link it with organization account which Manage AWS Account 
 
@@ -8,7 +9,11 @@ and link it with organization account which Manage AWS Account
 
 * We add aws account from aws organization account
 
+AWS Organizations is an account management service that lets you consolidate multiple AWS accounts into an organization that you create and centrally manage. With Organizations, you can create member accounts and invite existing accounts to join your organization. You can organize those accounts into groups and attach policy-based controls.
+
+
 ------------------------------------------------------------------------
+
 ### Service Control Policy
 * Enable Service Control policies (SCP)
     FullAccessAws
@@ -42,4 +47,6 @@ AWS Control Tower
  AWS Resource Access Manager (RAM) is a service that enables you to easily and securely share AWS resources with any AWS account or within your AWS Organization. It is not used for restricting access or permissions.
 
 
+AWS Resource Access Manager (RAM) is a service that enables you to easily and securely share AWS resources with any AWS account or within your AWS Organization. You can share AWS Transit Gateways, Subnets, AWS License Manager configurations, and Amazon Route 53 Resolver rules resources with RAM.
 
+You can procure AWS resources centrally, and use RAM to share resources such as subnets or License Manager configurations with other accounts. This eliminates the need to provision duplicate resources in every account in a multi-account environment, reducing the operational overhead of managing those resources in every account.

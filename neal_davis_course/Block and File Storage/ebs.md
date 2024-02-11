@@ -15,6 +15,7 @@
     - You can attach multiple EBS to your EC2
     - By default, the root EBS vol is delete when you terminate an instance
     - Non boot vols are not deleted on termination
+    - Persistent Storage for mission critical workloads
 
 ### EBS Volumes
 

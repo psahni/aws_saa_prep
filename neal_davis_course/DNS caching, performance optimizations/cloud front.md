@@ -29,6 +29,16 @@ You can set up CloudFront with origin failover for scenarios that require high a
 
 • On the frontend an Amazon CloudFront distribution can be placed in front of the ALB and this will cache content for better performance and also offloads requests from the backend.
 
+### Users take a lot of time to log into their website. There are also occasions when their users are getting HTTP 504 errors. (Performance + Authentication)
+* It is already mentioned in the problem that company is using cloud front.
+
+Solutions:-
+ Set up an origin failover by creating an origin group with two origins. Specify one as the primary origin and the other as the second origin which CloudFront automatically switches to when the primary origin returns specific HTTP status code failure responses.
+
+  Lambda@Edge to allow your Lambda functions to customize the content that CloudFront delivers and to execute the authentication process in AWS locations closer to the users
+
+  ![Alt text](image.png)
+
 ### Block countries to access the content due to copyright issues
 
 When a user requests your content, CloudFront typically serves the requested content regardless of where the user is located. If you need to prevent users in specific countries from accessing your content, you can use the CloudFront geo restriction feature to do one of the following:

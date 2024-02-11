@@ -41,3 +41,10 @@ Disaster Recovery
 
     https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iii-pilot-light-and-warm-standby/
 
+
+### AWS Secret Manager
+
+* How to ensure that sensitive configuration data and credentials, such as database passwords and API keys, are stored securely and encrypted within the Amazon EKS cluster's etcd key-value store.
+
+==> By using AWS Secret Manager with a new AWS KMS key
+This integration ensures that sensitive data is encrypted at rest and accessible only to authorized users or applications. By using AWS Secret Manager and a new AWS KMS key, you can ensure that your EKS cluster's etcd key-value store is secure and your sensitive data is protected.

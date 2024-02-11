@@ -30,3 +30,13 @@ Amazon EC2 Nitro-based systems are not required for this solution but do offer a
 
 
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html
+
+----------
+
+This particular scenario tests your understanding of EBS, EFS, and S3. In this scenario, there is a fleet of On-Demand EC2 instances that store file documents from the users to one of the attached EBS Volumes. The system performance is quite slow because the architecture doesn't provide the EC2 instances parallel shared access to the file documents.
+
+Although an EBS Volume can be attached to multiple EC2 instances, you can only do so on instances within an availability zone. What we need is high-available storage that can span multiple availability zones. Take note as well that the type of storage needed here is "file storage" which means that S3 is not the best service to use because it is mainly used for "object storage", and S3 does not provide the notion of "folders" too. This is why using EFS is the correct answer.
+
+![Alt text](image-1.png)
+
+* EC2 instances in multiple AZ is the key point here.

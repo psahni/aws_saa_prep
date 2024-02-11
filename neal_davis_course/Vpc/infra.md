@@ -20,6 +20,8 @@ A security group controls the traffic that is allowed to reach and leave the res
 
 When you create a VPC, it comes with a default security group. You can create additional security groups for a VPC, each with their own inbound and outbound rules
 
+Security groups are stateful, meaning they automatically allow return traffic associated with the client who initiated the connection to the instance. Therefore, any return traffic from the specified IP address on port 22 will be allowed to pass through the security group, regardless of whether or not there is an explicit outbound rule allowing it
+
 VPC with a subnet, an internet gateway, and a security group. The subnet contains an EC2 instance. The security group is assigned to the instance. The security group acts as a virtual firewall. The only traffic that reaches the instance is the traffic allowed by the security group rules. For example, if the security group contains a rule that allows ICMP traffic to the instance from your network, then you could ping the instance from your computer. If the security group does not contain a rule that allows SSH traffic, then you could not connect to your instance using SSH.
 
 https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html

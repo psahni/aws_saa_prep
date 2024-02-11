@@ -59,6 +59,7 @@ Amazon Dynamo DB
     - NoSql DB
     - Fully Managed
     - *DynamoDB Streams* maintains a list of item level changes and can integrate with Lambda to create triggers.
+    - Performance:- The more distinct partition key values your workload accesses, the more those requests will be spread across the partitioned space. Conversely, the less distinct partition key values, the less evenly spread it would be across the partitioned space, which effectively slows the performance. This will distribute the workload evenly and provisioned throughput efficiently.
 
 Good To Read
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html

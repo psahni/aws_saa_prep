@@ -2,7 +2,7 @@
 
 This service is designed to provide robust file storage for business applications. It offers the familiarity of Windows Server Message Block (SMB) services, enabling users to access files seamlessly from various platforms such as Windows, macOS, or Linux. This accessibility can be from in-house systems or virtualized AWS environments.
 
-" fully managed, highly available, and scalable file storage solution built on Windows Server that uses the Server Message Block (SMB) protocol"
+"fully managed, highly available, and scalable file storage solution built on Windows Server that uses the Server Message Block (SMB) protocol"
 
 
 Integration with Microsoft Active Directory ensures businesses can easily manage user groups and access. Security is a top priority, with FSx offering end-to-end encryption in transit and at rest. Additionally, users benefit from fully managed backups, ensuring data integrity and availability.

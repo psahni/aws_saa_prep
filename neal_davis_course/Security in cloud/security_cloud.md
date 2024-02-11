@@ -48,7 +48,7 @@
 
 
 
-### Server Side Encryption with AWS KMS Managed Keys (SSE-KMS) (When Customer wants control over KeyAur)
+### Server Side Encryption with AWS KMS Managed Keys (SSE-KMS) (When Customer wants control over Key)
 
 SSE-KMS requires that AWS manage the data key but you manage the customer master key (CMK) in AWS KMS. You can choose a customer managed CMK or the AWS managed CMK for Amazon S3 in your account.
 
@@ -96,6 +96,10 @@ Other way to authenticate using IAM role - AWSAuthenticationPlugin.
     DDOS attacks
     Protect and monitoring
     Standard comes by default with cloud front service
+
+    For higher levels of protection against attacks targeting your applications running on Amazon Elastic Compute Cloud (EC2), Elastic Load Balancing(ELB), Amazon CloudFront, and Amazon Route 53 resources, you can subscribe to AWS Shield Advanced. In addition to the network and transport layer protections that come with Standard, AWS Shield Advanced provides additional detection and mitigation against large and sophisticated DDoS attacks, near real-time visibility into attacks, and integration with AWS WAF, a web application firewall.
+
+    AWS Shield Advanced also gives you 24x7 access to the AWS DDoS Response Team (DRT) and protection against DDoS related spikes in your Amazon Elastic Compute Cloud (EC2), Elastic Load Balancing(ELB), Amazon CloudFront, and Amazon Route 53 charges.
 
 ### Defence in Depth
     Security at multi levels
