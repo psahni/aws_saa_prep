@@ -53,6 +53,14 @@ When query string is B route to TG - ALB 2
 
 These rules were added to the ALB
 
+Application Load Balancer operates at the request level (layer 7), routing traffic to targets (EC2 instances, containers, IP addresses, and Lambda functions) based on the content of the request. Ideal for advanced load balancing of HTTP and HTTPS traffic,
+
+If your application is composed of several individual services, an Application Load Balancer can route a request to a service based on the content of the request such as Host field, Path URL, HTTP header, HTTP method, Query string, or Source IP address.
+
+ALBs can also route and load balance gRPC traffic between microservices or between gRPC-enabled clients and services. This will allow customers to seamlessly introduce gRPC traffic management in their architectures without changing any of the underlying infrastructure on their clients or services.
+
+![Alt text](image.png)
+
 ### Scaling Policies
 - Dynamic Scaling
 - Scheduled Scaling
