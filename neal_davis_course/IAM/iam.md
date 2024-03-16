@@ -33,15 +33,6 @@ I went to user list in IAM, and it was showing Enable MFA
 
 ------------------------------------------------------------
 
-* STS service
-
-EC2 AssumeRole API call
-
-AWS provides AWS Security Token Service (AWS STS) as a web service that enables you to request temporary, limited-privilege credentials for users.
-
-The Security Token Service allows for temporary credentials to be used with identity federation, delegation, cross-account access, and IAM roles
-
-
 
 ------------------------------------------------------------
 

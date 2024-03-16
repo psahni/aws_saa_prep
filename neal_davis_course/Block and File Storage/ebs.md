@@ -17,6 +17,12 @@
     - Non boot vols are not deleted on termination
     - Persistent Storage for mission critical workloads
 
+
+    - An EBS volume is off-instance storage that can persist independently from the life of an instance. You can specify not to terminate the EBS volume when you terminate the EC2 instance during instance creation.
+    - EBS volumes support live configuration changes while in production which means that you can modify the volume type, volume size, and IOPS capacity without service interruptions.
+
+
+
 ### EBS Volumes
 
 * Gp2

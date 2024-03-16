@@ -47,3 +47,16 @@ A VPG is used to setup an AWS VPN which you can use in combination with Direct C
 Refer Diagram
 
 Each VPC has a virtual private gateway that connects to the Direct Connect gateway using a virtual private gateway association. The Direct Connect gateway uses a private virtual interface for the connection to the AWS Direct Connect location. There is an AWS Direct Connect connection from the location to the customer data center.
+
+### VPN connection between on premise and AWS
+- A VPN connection refers to the connection between your VPC and your own network. AWS supports Internet Protocol security (IPsec) VPN connections.
+
+By default, instances that you launch into a virtual private cloud (VPC) can't communicate with your own network. You can enable access to your network from your VPC by attaching a virtual private gateway to the VPC, creating a custom route table, updating your security group rules, and creating an AWS managed VPN connection.
+
+A customer gateway is a physical device or software application on your side of the VPN connection.
+
+To create a VPN connection, you must create a customer gateway resource in AWS, which provides information to AWS about your customer gateway device
+
+The following diagram (client_on_premise_aws_vpn) illustrates single VPN connections. The VPC has an attached virtual private gateway, and your remote network includes a customer gateway, which you must configure to enable the VPN connection. You set up the routing so that any traffic from the VPC bound for your network is routed to the virtual private gateway.
+
+

@@ -49,6 +49,8 @@ You can use AWS DMS to migrate data to an Amazon DynamoDB table. Amazon DynamoDB
         Storage optimized
 
         * Snowball can only transfer up to 80TB/50TBs of data.
+        If the company has limited bandwidth, then it would take around 2 months to trasfer this
+        much of data to sqs cloud.
 
     AWS Snowcone 
         A portable, rugged, and secure device for edge computing and data transfer. You can use a Snowcone device to collect, process, and move data to the AWS Cloud, either offline by shipping the device to AWS, or online by using AWS DataSync.
