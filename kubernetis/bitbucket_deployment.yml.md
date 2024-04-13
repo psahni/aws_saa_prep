@@ -5,8 +5,8 @@ Kubernetes (K8s) is a high-availability rapid deployment and container orchestra
 Kubernetes automates the management of containerized applications. It provides a centralized control plane to manage containers and the underlying infrastructure, automate scaling, rollouts and rollbacks, and more. The platform abstracts away the underlying infrastructure and provides a unified way of managing containers and applications, making it easier for developers to build, deploy, and run applications at scale.
 
 [REF]
-https://support.atlassian.com/bitbucket-cloud/docs/deploy-to-kubernetes/
-https://www.freecodecamp.org/news/how-to-securely-deploy-to-kubernetes-from-bitbucket-pipelines-78e668f331b9/
+* https://support.atlassian.com/bitbucket-cloud/docs/deploy-to-kubernetes/
+* https://www.freecodecamp.org/news/how-to-securely-deploy-to-kubernetes-from-bitbucket-pipelines-78e668f331b9/
 
 * Create bitbucket-pipelines.yml
 * Build and push docker image
