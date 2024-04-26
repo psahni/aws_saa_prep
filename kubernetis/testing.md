@@ -4,14 +4,17 @@
 skills, engineering time, maintenance, and troubleshooting. Just setting up a working
 Kubernetes cluster is pretty simple, but that’s a long way from a cluster that’s ready for
 production. You need to consider at least the following questions:
+
 • Is the control plane highly available? That is, if a master node goes down or
 becomes unresponsive, does your cluster still work? Can you still deploy or
 update apps? Will your running applications still be fault-tolerant without the
 control plane? (See “High Availability” on page 35.)
+
 • Is your pool of worker nodes highly available? That is, if an outage should take
 down several worker nodes, or even a whole cloud availability zone, will your
 workloads stop running? Will your cluster keep working? Will it be able to automatically
 provision new nodes to heal itself, or will it require manual intervention?
+
 • Is your cluster set up securely? Do its internal components communicate using
 TLS encryption and trusted certificates? Do users and applications have minimal
 rights and permissions for cluster operations? Are container security defaults set
@@ -21,14 +24,18 @@ Is access to the underlying database properly controlled and authenticated?
 • Are all services in your cluster secure? If they’re accessible from the internet, are
 they properly authenticated and authorized? Is access to the cluster API strictly
 limited?
+
 • Is your cluster conformant? Does it meet the standards for Kubernetes clusters
 defined by the Cloud Native Computing Foundation? (See “Conformance Checking”
 on page 102 for details.)
+
 • Are your cluster nodes fully config-managed, rather than being set up by imperative
 shell scripts and then left alone? The operating system and kernel on each
 node needs to be updated, have security patches applied, and so on.
+
 • Is the data in your cluster properly backed up, including any persistent storage?
 What is your restore process? How often do you test restores?
+
 • Once you have a working cluster, how do you maintain it over time? How do you
 provision new nodes? Roll out config changes to existing nodes? Roll out Kubernetes
 updates? Scale in response to demand? Enforce policies?
