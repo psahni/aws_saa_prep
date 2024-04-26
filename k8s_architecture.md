@@ -1,3 +1,5 @@
+<img width="516" alt="image" src="https://github.com/psahni/aws_saa_prep/assets/84832/0438ff20-d9ff-45bc-b3c8-256f7cd10f6e">
+
 *The control plane is actually made up of several components:*
 
 `kube-apiserver`
