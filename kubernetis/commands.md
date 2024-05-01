@@ -17,3 +17,9 @@
 `$ kubectl port-forward pod/demo 9999:8888`
 
 `$ kubectl get pods --selector app=demo`
+
+### Check Namespaces
+`$ kubectl get namespaces`
+
+### To get a list of Pods in the prod namespace, run:
+`$kubectl get pods --namespace prod`
