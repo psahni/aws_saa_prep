@@ -92,6 +92,7 @@ ALBs can route traffic to different Target Groups based on URL Path, Hostname, H
 * To configure in ALB, we just need to add a listener
 * Import the certificate, and it will imported to ACM (Amazon certificate managment)
 
+
 ### ELB - Connection Draining / Deregistration Delay
 * EC2 instance is set on Draining, then ALB will send requests to other EC2 instances.
 * It will handle the existing requests before draining out.
