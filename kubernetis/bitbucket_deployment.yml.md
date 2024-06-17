@@ -48,3 +48,6 @@ pipelines:
 
 ### Bitbucket pipeline demo
 https://www.youtube.com/watch?v=wJv3ZGwxQPQ
+
+### Pipeline Settings explained
+https://support.atlassian.com/bitbucket-cloud/docs/pipeline-start-conditions/
