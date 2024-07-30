@@ -48,3 +48,23 @@ pipelines:
 
 ### Bitbucket pipeline demo
 https://www.youtube.com/watch?v=wJv3ZGwxQPQ
+
+### Pipeline Settings explained
+https://support.atlassian.com/bitbucket-cloud/docs/pipeline-start-conditions/
+
+### Deploy to Heroku
+https://support.atlassian.com/bitbucket-cloud/docs/deploy-to-heroku/
+
+### Services - Docker In Docker
+https://support.atlassian.com/bitbucket-cloud/docs/cache-and-service-container-definitions/
+
+### Pipeline start conditions - Branch, Pull Requests, Custom
+https://support.atlassian.com/bitbucket-cloud/docs/pipeline-start-conditions/
+
+### What is pipe in Bitbucket
+https://support.atlassian.com/bitbucket-cloud/docs/what-are-pipes/
+
+- A pipe is a custom Docker image for a container, which contains a script to perform a task. There are a bunch of available Pipes, but you can write your own too.
+- A pipe is made up of a few different files:
+   - A script, or binary, the code that performs the task.
+   - A Dockerfile, which tells us how to build the Docker container that runs your script.
