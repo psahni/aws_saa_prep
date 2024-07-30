@@ -21,6 +21,10 @@ https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-o
 
 * Using machine learning to analyze historical utilization metrics. AWS Compute Optimizer provides a set of APIs and a console experience to help you reduce costs and increase workload performance by recommending the optimal AWS resources for your AWS workloads.
 
+- Utlization metrics analysis
+- Graphs
+- Recommendations
+
 
 ![Alt text](compute_optimizer.png)
 
@@ -32,16 +36,41 @@ https://www.udemy.com/course/aws-certified-solutions-architect-associate-hands-o
 
 
 ### AWS Price List Api
-    Sends notification via SNS
+
+AWS Price List provides a catalog of the products and prices for AWS services that you can purchase on AWS.
+
+
+Sends notification via SNS
 
 * Author suggest to explore it before sit in exam.
 
+AWS Price List Query API
+
+This API provides a centralized and convenient way to programmatically query AWS for services, products, and pricing information.
 
 ### Cost and Usage report
 This report is based on AWS services
 
+* You can receive reports that break down your costs by the hour, day, or month, by product or product resource, or by tags that you define yourself. AWS updates the report in your bucket once a day in comma-separated value (CSV) format
+
+* AWS Cost and Usage Reports tracks your AWS usage and provides estimated charges associated with your account. Each report contains line items for each unique combination of AWS products, usage type, and operation that you use in your AWS account. You can customize the AWS Cost and Usage Reports to aggregate the information either by the hour, day, or month.
+
+
+AWS Cost and Usage Reports can do the following:
+
+- Deliver report files to your Amazon S3 bucket
+
+- Update the report up to three times a day
+
+- Create, retrieve, and delete your reports using the AWS CUR API Reference
+
+
 ### AWS Cost Explorer 
-It lets you filter spending and usage by Resource. You only track EC2 instances
+  Forcasting and estimation
+  It lets you filter spending and usage by Resource. You only track EC2 instances
+
+  On the Cost Explorer dashboard, Cost Explorer shows your estimated costs for the month to date, your forecasted costs for the month, a graph of your daily costs, your five top cost trends, and a list of reports that you recently viewed.
+
 
 ### AWS Budgets
  AWS Budgets allows you to be alerted and run custom actions if your budget thresholds are exceeded.

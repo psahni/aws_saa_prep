@@ -1,11 +1,8 @@
-Route 53
+### Route 53
 
 You can associate a Route 53 hosted Zone with a VPC in another account
     - Authorize the association
     - Create and association the second account
-
-
-
 
 
 https://s3.us-west-2.amazonaws.com/cloudformation-templates-us-west-2/ELBWithLockedDownAutoScaledInstances.template
@@ -31,7 +28,8 @@ Revision is recommended through cheet sheets and videos when needed.
 https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/cross-region-dns-based-load-balancing-and-failover.html
 
 Alias = Point one domain to any aws domain (allows top level domains too)
-    DNS namespace(Zone Apex)
+DNS namespace(Zone Apex)
+
 CNAME = Point one domain to any other domain (not the top level domain like example.com)
 
 ----
@@ -55,22 +53,25 @@ Active Passive
 There is one primary and secondry, health check will determine and route request accordingly
 
 ---
-Geolocation Routing
+### Geolocation Routing
+
 Asia traffic should go to 1.1.1.1
 US region traffic should go to 2.2.2.2
 Europe traffic should go 3.3.3.3
 
 Allow all traffic to go to 5.5.5.5 but not france, in this case use geolocation
 
-You have a legal requirement that people in any country but France should NOT be able to access your website. Which Route 53 Routing Policy helps you in achieving this?
+Q. You have a legal requirement that people in any country but France should NOT be able to access your website. Which Route 53 Routing Policy helps you in achieving this?
+A. Geolocation
 
-- Geolocation
 
----
-Geoproximity
+* Geoproximity
+
 Specify the bias value
 Shifting the traffic based of user's geolocation
 If there is no bias, then user will go to closest location
 
 ---
+
 Client side load balancing - Routing policy Multi value
+

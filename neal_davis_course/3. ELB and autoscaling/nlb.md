@@ -6,6 +6,7 @@
 2. Architect whitelist two IP's
 
 3. Use AWS Global Accelerator - Intelligent routing for lowest latency
+
 AWS Global Accelerator uses the vast, congestion-free AWS global network to route TCP and UDP traffic to a healthy application endpoint in the closest AWS Region to the user.
 This means it will intelligently route traffic to the closest point of presence (reducing latency). 
 

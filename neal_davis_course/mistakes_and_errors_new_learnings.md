@@ -6,7 +6,7 @@ It can be used for on-premises data-intensive Amazon EC2-based applications that
 
 Amazon SageMaker allows you to build, train, and deploy machine learning models for any use case with fully managed infrastructure, tools, and workflows. AWS Data Exchange allows you to gain access to third party data sets across Automotive, Financial Services, Gaming, Healthcare & Life Sciences, Manufacturing, Marketing, Media & Entertainment, Retail, and many more industries.
 
-------
+---------
 
 Q A Solutions Architect for a large banking company is configuring access control within the organization for an Amazon S3 bucket containing thousands of financial records. There are 20 different teams which need to have access to this bucket, however they all need different permissions. These 20 teams correspond to 20 accounts within the banking company who are currently using AWS Organizations.
 What is the simplest way to achieve this, whilst adhering to the principle of least privilege?
@@ -47,8 +47,6 @@ AWS Compute Optimizer helps you identify the optimal AWS resource configurations
 
 
 A high-performance file system is required for a financial modelling application. The data set will be stored on Amazon S3 and the storage solution must have seamless integration so objects can be accessed as files.
-
-
 
 Amazon FSx for Lustre provides a high-performance file system optimized for fast processing of workloads such as machine learning, high performance computing (HPC), video processing, financial modeling, and electronic design automation (EDA). Amazon FSx works natively with Amazon S3, letting you transparently access your S3 objects as files on Amazon FSx to run analyses for hours to months.
 
@@ -178,5 +176,14 @@ https://docs.aws.amazon.com/amazonglacier/latest/dev/downloading-an-archive-two-
 https://docs.aws.amazon.com/amazonglacier/latest/dev/glacier-select.html
 
 
+### EC2ThrottledException
 
+To enable your Lambda function to access resources inside your private VPC, you must provide additional VPC-specific configuration information that includes VPC subnet IDs and security group IDs.
 
+AWS Lambda uses this information to set up elastic network interfaces (ENIs) that enable your function to connect securely to other resources within your private VPC.
+
+If your VPC does not have sufficient ENIs or subnet IPs, your Lambda function will not scale as requests increase, and you will see an increase in invocation errors with EC2 error types like EC2ThrottledException.
+
+one of the option to avoid this exception is , You can Specifying Multiple subnets in each of the Availability Zones, your Lambda function can run in another Availability Zone if one goes down or runs out of IP addresses.
+
+This error means your request got throttled by EC2 rate limit while connecting to your VPC.

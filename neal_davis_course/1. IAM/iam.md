@@ -78,8 +78,7 @@ One take aways is if one user has Identity based policy and resource (S3) has re
 
 ------------------------------------------------------------
 IAM Policy Structure
---------------------------------------------------------------------------------------------------------------
-
+------------------------------------------------------------
 IAM Policy Simulator
 
 You have policy and a resource, you can check which actions or API's (permisisons) are allowed access for that policy and resource
@@ -94,9 +93,9 @@ Click - Select all permisions
 It will list down all permissions that are allowed access and denied
 
 You can whitlist the IP classes in your policy documents
----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------
 Access Evalutation Tools
----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------
 IAM Best Practices (Re-Watch)
 
 
@@ -106,9 +105,8 @@ Identity providers and federation
 
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html
 
------------------------------------------------------------------------
- Exam cram (Watch again)
- Most of the content is common sense, so just watch normally
+Exam cram (Watch again)
+Most of the content is common sense, so just watch normally
 
 ------------------------------------------------------------------------
 Arch Patterns
@@ -121,8 +119,6 @@ Add to group and assign policy
 * Grant least privileges is an IAM Best Practices that makes sure users only have access to what they need and nothing more
 
 
-
-
 ### Secure DB with IAM Role
 
 The best way to secure this solution is to get rid of the credentials completely by using an IAM role instead. The IAM role can be assigned permissions to access the database instance and can be attached to the EC2 instance. The instance will then obtain temporary security credentials from AWS STS which is much more secure.
@@ -131,6 +127,6 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.htm
 
 ### Profile credentials for EC2
 
-. To protect the confidential data of your customers, you have to ensure that your RDS database can only be accessed using the profile credentials specific to your EC2 instances via an authentication token.
+To protect the confidential data of your customers, you have to ensure that your RDS database can only be accessed using the profile credentials specific to your EC2 instances via an authentication token.
 
 

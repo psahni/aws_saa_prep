@@ -1,0 +1,29 @@
+Global Acceslerator Load Balancer Static IP
+
+Dynamo DB tables
+
+API Gateway HTTP API
+
+ALB NLB depth
+
+DDOS, WAF
+
+AWS Lambda
+
+Glacier Vault Lock
+
+Complaince mode
+
+Policy
+  Principles
+
+Costing
+  Download reports
+
+
+SQS, SNS
+
+Athena, Redshift, Glue
+
+
+DMS

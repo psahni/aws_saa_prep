@@ -3,9 +3,7 @@ Amazon CloudFront can be used to cache the files in edge locations around the wo
 To serve a static website hosted on Amazon S3, you can deploy a CloudFront distribution using one of these configurations:
 
   • Using a REST API endpoint as the origin with access restricted by an origin access identity (OAI)
-
   • Using a website endpoint as the origin with anonymous (public) access allowed
-
   • Using a website endpoint as the origin with access restricted by a Referer header
 
 

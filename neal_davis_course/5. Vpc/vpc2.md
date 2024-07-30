@@ -21,7 +21,8 @@ Endpoints
 Create VPC with S3Gateway
 Create EC2 instance with IAM Role AllowS3
 
-### How To Prevent DB calls from Traversing the Internet
+### How To Prevent DB calls from Traversing the Internet (Dynamo DB)
+
 The AWS IAM authenticator for Kubernetes is integrated into the EKS cluster for role-based access control (RBAC) and cluster authentication. A solutions architect must improve network security by preventing database calls from traversing the public internet. An automated cross-account backup for the DynamoDB table is also required for long-term retention.
 
 
@@ -43,19 +44,23 @@ Now VPN server decrypts it and sends it to destination
 Site to Site
 Organizations can connect to AWS infra VPC's through VPN gateways and their own VPN Gateway (refer pic)
 
----
+----------------------------------------------------------------------
 
-Cloud Hub
+### Cloud Hub
 
 Its an arch. pattern
 
 We connect multiple customer gateway to single VPN of aws
 
+The AWS VPN CloudHub operates on a simple hub-and-spoke model that you can use with or without a VPC. Use this approach if you have multiple branch offices and existing internet connections and would like to implement a convenient, potentially low-cost hub-and-spoke model for primary or backup connectivity between these remote offices.
+
+See (aws-vpn-cloudhub.png)
+
 BGP - Border gateway protocol - Connect autonomous systems on internet
 
---
+----------------------------------------------------------------------
 
-AWS direct connect (DX)
+### AWS direct connect (DX)
 
 Private line
 DX connections are not encrypted
@@ -66,9 +71,9 @@ AWS Direct Connect Gateway
 
 Allow DX connectivity to between regions and one coorporate office
 
----
+----------------------------------------------------------------------
 
-AWS Transit Gatway
+### AWS Transit Gatway
 
 In order to connect Multiple VPC's a transit hub is used.
 Corporate office is connect to transit hub
@@ -80,7 +85,8 @@ IpV6 protocol in VPC
 
 128 bits
 --
-Flow Logs
+
+### Flow Logs
 
 Up until now, AWS customers collected this data by installing agents on their Amazon Elastic Compute Cloud (Amazon EC2) instances. Doing so imposed some overhead on each instance, and also provided a view that was limited to network flows that were visible to the instance.
 

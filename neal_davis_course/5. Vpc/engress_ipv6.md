@@ -7,7 +7,7 @@ Q. A payment processing company plans to migrate its on-premises application to 
 
 * In this scenario, you can use an egress-only internet gateway to allow outbound IPv6 communication to the internet and then use the AWS Network Firewall to set up the required rules for traffic inspection and traffic filtering.
 
-### AWS Network Firewall
+### AWS Network Firewall (VPC's)
 
 
 AWS Network Firewall is a managed service that makes it easy to deploy essential network protections for all of your Amazon Virtual Private Clouds (VPCs). The service can be set up with just a few clicks and scales automatically with your network traffic, so you don't have to worry about deploying and managing any infrastructure. AWS Network Firewall includes features that provide protection from common network threats.

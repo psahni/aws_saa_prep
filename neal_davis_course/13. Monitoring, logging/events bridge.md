@@ -23,7 +23,7 @@ API tracing
 
 XRay can send traces to Grafana, which you can visualize
 
-### Usecase to check if SSL certification is expired
+### Usecase to check if SSL certification is expired (CERTIFICATION EXPIRE)
 - Event Bridge rule to check AWS Health or ACM expiration event related to ACM certificates.
 - Event Bridge rule to check the "DaysToExpiry" metric of all ACM certificates in Amazon CloudWatch. Schedule it to run everyday.
 
@@ -34,3 +34,16 @@ XRay can send traces to Grafana, which you can visualize
 -AWS_ACM_RENEWAL_FAILURE (for certificates signed by a private CA)
 
 * AWS Config provides a built-in "acm-certificate-expiration-check" managed rule that you can use. No need to create manual
+
+
+### Usecases (2)
+- You can schedule a cron job that runs every hour
+
+- Event Pattern: Service to service communication
+    IAM user sign in -> SNS topic with Email notficaiton
+
+- Trigger Lambda functions
+
+- You can have EC2 instance start event, and you trigger a event bridge rule, which triggers some other AWS service
+
+- Codebuild failed event, you can attach event bridge rule which triggers SNS to send notification

@@ -6,11 +6,9 @@ and link it with organization account which Manage AWS Account
 
 * You get consolidated billing
 
-
 * We add aws account from aws organization account
 
 AWS Organizations is an account management service that lets you consolidate multiple AWS accounts into an organization that you create and centrally manage. With Organizations, you can create member accounts and invite existing accounts to join your organization. You can organize those accounts into groups and attach policy-based controls.
-
 
 ------------------------------------------------------------------------
 
@@ -23,6 +21,8 @@ AWS Organizations is an account management service that lets you consolidate mul
 * You need to assign IAM roles also
 
 * You can create a policy for example, that Dev account users will only able to launch t2 micro instance, but have full access. IAM role gives ability to perform action as per policy
+
+### SCP
 
 * To apply the restrictions across multiple member accounts you must use a Service Control Policy (SCP) in the AWS Organization. The way you would do this is to create a deny rule that applies to anything that does not equal the specific instance type you want to allow.
 

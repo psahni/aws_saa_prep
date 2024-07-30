@@ -1,8 +1,14 @@
 ### Kinesis Data Streams
 
-You can use Amazon Kinesis Data Streams to collect and process large streams of data records in real time. You can create data-processing applications, known as Kinesis Data Streams applications(Like Firehose). A typical Kinesis Data Streams application reads data from a data stream as data records. These applications can use the Kinesis Client Library, and they can run on Amazon EC2 instances. You can send the processed records to dashboards, use them to generate alerts, dynamically change pricing and advertising strategies, or send data to a variety of other AWS services like S3 and Redshift
+You can use Amazon Kinesis Data Streams to collect and process large streams of data records in real time. 
+You can create data-processing applications, known as Kinesis Data Streams applications(Like Firehose). 
+A typical Kinesis Data Streams application reads data from a data stream as data records. 
+These applications can use the Kinesis Client Library, and they can run on Amazon EC2 instances. 
+You can send the processed records to dashboards, use them to generate alerts, dynamically change pricing and advertising strategies, or send data to a variety of other AWS services like S3 and Redshift
 
 KDS can continuously capture gigabytes of data per second from hundreds of thousands of sources.
+
+Example: Media company wants to launch real time analytics service
 
 ### Kinesis Data Streams + Lambda + DynamoDB (NoSQL)
 Kinesis Data Streams integrates seamlessly with AWS Lambda, which can be utilized to transform and anonymize the Personally Identifiable Information (PII) in transit prior to storage. This ensures that sensitive information is appropriately anonymized at the earliest opportunity, significantly reducing the risk of any data breaches or privacy violations. Finally, the anonymized data is stored in Amazon DynamoDB, a NoSQL database suitable for handling the processed data.

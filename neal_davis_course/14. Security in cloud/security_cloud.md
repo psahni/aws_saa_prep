@@ -1,5 +1,4 @@
 ### AWS Directory Service
-
     AWS Directory Service provides multiple ways to use Microsoft Active Directory (AD) with other AWS services.
 
 ### Identity Providers and Federation
@@ -54,6 +53,9 @@
 
     https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-mgmt
 
+    Key policy
+    - In order that one can use KMS key, one should have key policy. IAM policies will itself has no effect to allow to use.
+    - Though you can use IAM policy to deny permission to KMS key
 
 
 ### Server Side Encryption with AWS KMS Managed Keys (SSE-KMS) (When Customer wants control over Key)

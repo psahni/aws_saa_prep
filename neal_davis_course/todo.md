@@ -10,7 +10,7 @@ How do you implement the most cost-efficient architecture without compromising h
 Elastic Transcoder to transcode original high-resolution MP4 videos to HL.
 
 How can the domain's zone apex, for example, 'myzoneapexdomain.com', be pointed towards an Elastic Load Balancer?
- By using an Amazon Route 53 Alias record.
+ - By using an Amazon Route 53 Alias record. A record aliased to load balancer DNS name
 
 
 Amazon Elastic MapReduce (EMR)
@@ -63,6 +63,26 @@ Muli region autoscaling
 Enchance networking
 
 RTO And RPO of Stand by and Pilot mode (Disaster recovery)
-Pilot -  Recovery point objective (RPO) of 60 seconds or less and a Recovery time objective (RTO) of 1 hour.
+* Pilot -  Recovery point objective (RPO) of 60 seconds or less and a Recovery time objective (RTO) of 1 hour.
 
 Path based routing
+
+* VIF
+
+Athena vs Redshift
+
+Database Enhance Monitoring
+
+SSE S3 managed key, built in key rotation
+
+S3 IA vs S3 One Zone IA
+
+New Links (27/06/2024)
+https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/TutorialLBRMultipleEC2InRegion.html
+https://aws.amazon.com/route53/faqs/#which_dns_records_are_supported
+https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html
+
+
+Route tables
+
+KMS

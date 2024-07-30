@@ -24,6 +24,8 @@
 
     End result, explicit Deny will override explicit allow. So user will not be able to delete the object in bucket. If there is no Deny in IAM role, then he will be able to delete it.
 
+    IAM Role > Bucket Policy
+
 ### S3 versioning and lifecycle
     - When you have multiple versions of the same object in the bucket
     - Helps in accidental deletion
@@ -32,7 +34,7 @@
     You can do replication within or cross region
     Also across accounts
 
-    Only the S3 bucket owner can permanently delete objects once versioning is enabled.
+    * Only the S3 bucket owner can permanently delete objects once versioning is enabled.
 
 
 ### Multi-factor authentication
@@ -53,8 +55,8 @@
 
 ### Multipart upload
     - Upload objects in parts indepedently, in parallel and in any order
-    - recommended for >=100
-    - Must be used for >= 5 Gb
+    - recommended for >=100 MB
+    - Must be used for >= 5 GB
 
 ### Trasfer Acceleration 
     - Use cloud front edge locations for transfers, from there it traverses to global network

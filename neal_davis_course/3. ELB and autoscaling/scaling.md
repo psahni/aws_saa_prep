@@ -42,6 +42,8 @@ Target groups route requests to individual registered targets, such as EC2 insta
 
 Each target group is used to route requests to one or more registered targets. When you create each listener rule, you specify a target group and conditions. When a rule condition is met, traffic is forwarded to the corresponding target group. You can create different target groups for different types of requests. For example, create one target group for general requests and other target groups for requests to the microservices for your application. You can use each target group with only one load balancer.
 
+You can configure health checks on a per target group basis. Health checks are performed on all targets registered to a target group that is specified in a listener rule for your load balancer.
+
 https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html
 
 A NLB was created by the author, and linked the Target group to the NLB created
@@ -57,7 +59,6 @@ Target group has to be attached to load balancer and rules need to be set at ALB
 ### ALB - Query String Routing
 
 When query string is A route to TG - ALB 
-
 When query string is B route to TG - ALB 2
 
 These rules were added to the ALB

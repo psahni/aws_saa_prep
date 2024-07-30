@@ -17,10 +17,10 @@ Notifications can be sent to:
     Need to configure SNS/SQS/Lambda before S3.
     No extra charges from S3 but you pay for SNS, SQS and Lambda.
 
+S3 is Now Strongly Consistent
+Effective immediately, all S3 GET, PUT, and LIST operations, as well as operations that change object tags, ACLs, or metadata, are now strongly consistent. What you write is what you will read, and the results of a LIST will be an accurate reflection of what’s in the bucket. This applies to all existing and new S3 objects, works in all regions, and is available to you at no extra charge! There’s no impact on performance, you can update an object hundreds of times per second if you’d like, and there are no global dependencies
 
 
-
-Provides eventual consistency for overwrite PUTS and DELETES (takes time to propagate).
 
 # Imp Points
 * You can only store files (objects) on S3.
@@ -97,3 +97,22 @@ Ephemeral Data Store
 
 * What type of consistency model is provided in Amazon S3 when you upload a new version of an object?
 - You get strong read after write consistency for all applications. You used to only get eventual consistency, but AWS made an update in late 2020.
+
+
+### Setting the storage class of an object
+
+* When creating a new object, you can specify its storage class. For example, when creating objects by using the PUT Object, POST Object, and Initiate Multipart Upload API operations, you add the x-amz-storage-class request header to specify a storage class. If you don't add this header, Amazon S3 uses S3 Standard, the default storage class.
+
+* You can also change the storage class of an object that is already stored in Amazon S3 to any other storage class by making a copy of the object by using the PUT Object - Copy API operation.
+
+* It is possible to specify storage class in upload request (PUT Object, POST Object, and Initiate Multipart Upload) via x-amz-storage-class header.
+
+Additionally, if you want to enforce some storage classes in a bucket, you can do this via Bucket Policy (with s3:x-amz-storage-class condition key). This way any attempt to upload object with prohibited classes would fail.
+
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html#sc-howtoset
+
+
+https://stackoverflow.com/questions/20064275/how-to-change-default-storage-class-on-aws-s3?rq=3
+
+aws s3 cp glacier.png s3://my-lambada-example-thumbnails/ --storage-class STANDARD_IA

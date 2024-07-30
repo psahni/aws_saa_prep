@@ -1,4 +1,4 @@
-CloudTrail
+### CloudTrail
     Auditing - Who did what
     Api actions: Everything is api in aws, so it is tracked via cloudtrail
 
@@ -7,15 +7,18 @@ CloudTrail
         - Data events
         - Insight events
 
-    You can use AWS CloudTrail to record AWS API calls and other activity for your AWS account and to save the recorded information to log files in an Amazon Simple Storage Service (Amazon S3) bucket that you choose. By default, the log files that CloudTrail puts in your S3 bucket are encrypted using server-side encryption with Amazon S3–managed encryption keys (SSE-S3).
+    You can use AWS CloudTrail to record AWS API calls and other activity for your AWS account and to save the recorded information to log files in an Amazon Simple Storage Service (Amazon S3) bucket that you choose. 
+    
+### Default Encryption
+By default, the log files that CloudTrail puts in your S3 bucket are encrypted using server-side encryption with Amazon S3–managed encryption keys (SSE-S3). But you can choose to do it by AWS KMS
 
-    CloudTrail captures all API calls to AWS KMS as events, including calls from the AWS KMS console, AWS KMS APIs, AWS CloudFormation templates, the AWS Command Line Interface (AWS CLI), and AWS Tools for PowerShell.
+CloudTrail captures all API calls to AWS KMS as events, including calls from the AWS KMS console, AWS KMS APIs, AWS CloudFormation templates, the AWS Command Line Interface (AWS CLI), and AWS Tools for PowerShell.
 
 
 Unified Agent
 https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html
 
-    - Custom metrics from various AWS resources
+- Custom metrics from various AWS resources
 
 
 ### Creating a trail for an organization

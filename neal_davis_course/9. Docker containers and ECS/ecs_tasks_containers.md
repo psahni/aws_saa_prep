@@ -12,3 +12,6 @@
 
 
 https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html
+
+* Amazon ECS task IAM role (for application code to access aws service like S3)
+* Amazon ECS task execution IAM role (For AWS api calls like pulling container image)

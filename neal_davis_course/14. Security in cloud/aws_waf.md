@@ -20,3 +20,4 @@ At the simplest level, AWS WAF lets you choose one of the following behaviors:
 ### AWS Network Firewall
 
 AWS Network Firewall is a managed service that is primarily used to deploy essential network protections for all of your Amazon Virtual Private Clouds (VPCs) and not particularly to your Application Load Balancers. Take note that the AWS Network Firewall is account-specific by default and needs to be integrated with the AWS Firewall Manager to easily share the firewall across your other AWS accounts. In addition, refactoring the web application will require an immense amount of time.
+

@@ -14,7 +14,7 @@ Amazon Elastic File System (Amazon EFS) provides a simple, scalable, fully manag
 - You can control access to files and directories with POSIX-compliant user and group-level permissions.
 - POSIX (group and user) permissions
 
-
+-----------------------------------------------------------------------------------------------------------------------
 
 * For Windows-based workflows with frequently accessed data, FSx for Windows is the best choice due to its performance, integration, and scalability.
 

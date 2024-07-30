@@ -26,7 +26,7 @@ VPC with a subnet, an internet gateway, and a security group. The subnet contain
 
 https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html
 
---------------------
+
 
 Control traffic to subnets using network ACLs
 

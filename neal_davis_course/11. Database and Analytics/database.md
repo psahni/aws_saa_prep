@@ -51,17 +51,17 @@ Redis (Cluster OFF)
 
 
 
-Amazon Dynamo DB
+### Amazon Dynamo DB
 
     Amazon DynamoDB is a non-relational database that is managed for you. It can *scale without downtime* and with minimal operational overhead. DynamoDB can support the request rates and response times required by this solution and is often used in eCommerce solutions and for session state use cases.
-    
 
     - NoSql DB
     - Fully Managed
     - *DynamoDB Streams* maintains a list of item level changes and can integrate with Lambda to create triggers.
     - Performance:- The more distinct partition key values your workload accesses, the more those requests will be spread across the partitioned space. Conversely, the less distinct partition key values, the less evenly spread it would be across the partitioned space, which effectively slows the performance. This will distribute the workload evenly and provisioned throughput efficiently.
 
-    ### Session Management
+### Session Management Dynamo DB
+
     Amazon DynamoDB is a NoSQL database and is ideal for storing session data. The data will be both highly available and durable and can be stored persistently. DynamoDB also offers time to live (TTL) attributes that can be used to automatically expire items from the table after specified time periods.
 
 
@@ -86,7 +86,7 @@ Amazon Redshift
     OLAP
     BI
     3 copies
-    Cont. backups
+        Cont. backups
     Relational DB
     Complex Queries
     Repeat queries - Cache result (Team of scientists..)
@@ -115,6 +115,9 @@ Amazon Athena
     Optimize columnar data store generation
     https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/
 
+    Apache Parquet is an open-source columnar storage format that is 2x faster to unload and takes up 6x less storage in Amazon S3 as compared to other text formats. One can COPY Apache Parquet and Apache ORC file formats from Amazon S3 to your Amazon Redshift cluster. Using AWS Glue, one can configure and run a job to transform CSV data to Parquet. Parquet is a columnar format that is well suited for AWS analytics services like Amazon Athena and Amazon Redshift Spectrum.
+
+
 ### AWS Glue
     ETL Service
     AWS Glue is a serverless data integration service that makes it easier to discover, prepare, move, and integrate data from multiple sources for analytics, machine learning (ML), and application development.
@@ -129,7 +132,8 @@ https://docs.aws.amazon.com/glue/latest/dg/how-it-works.html
 
 ### RDS Proxy
 
-Amazon RDS Proxy is a fully managed, highly available database proxy for Amazon Relational Database Service (RDS) that makes applications more scalable, more resilient to database failures, and more secure. Amazon RDS Proxy allows applications to pool and share connections established with the database, improving database efficiency and application scalability.
+Amazon RDS Proxy is a fully managed, highly available database proxy for Amazon Relational Database Service (RDS) that makes applications more scalable, more resilient to database failures, and more secure. 
+Amazon RDS Proxy allows applications to pool and share connections established with the database, improving database efficiency and application scalability.
 
 ### Too many connections Issue
 
@@ -151,7 +155,11 @@ If you want to force SSL, use the rds.force_ssl parameter. By default, the rds.f
 
 Download the Amazon RDS Root CA certificate. Import the certificate to your servers and configure your application to use SSL to encrypt the connection to RDS.
 
+### SSL SQL Server
 
+AWS provides SSL support for RDS for SQL Server. This allows you to protect and secure your data both in transit and at rest. To enable SSL support you should download a public certificate key from RDS at https://rds.amazonaws.com/doc/rds-ssl-ca-cert.pem You will then use the Microsoft Management Console (MMC) to import the certificate into Windows. 
+
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL.html
 
 
 ### DMS

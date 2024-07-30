@@ -2,6 +2,7 @@
 
 
 Using "AWS PrivateLink" to create an interface endpoint will allow your traffic to traverse the AWS Global Backbone to allow maximum performance and security. 
+
 Also by using an "AWS Direct Connect" cable you can ensure you have a dedicated cable to provide maximum performance and low latency to and from AWS.
 
 
@@ -20,7 +21,6 @@ AWS Direct Connect provides a secure, reliable and private connection. However, 
 Use AWS Direct Connect gateway to connect your VPCs. You associate an AWS Direct Connect gateway with either of the following gateways:
 
     A transit gateway when you have multiple VPCs in the same Region
-
     A virtual private gateway
 
 You can also use a virtual private gateway to extend your Local Zone. This configuration allows the VPC associated with the Local Zone to connect to a Direct Connect gateway. The Direct Connect gateway connects to a Direct Connect location in a Region. The on-premises data center has a Direct Connect connection to the Direct Connect location. 
@@ -28,10 +28,11 @@ You can also use a virtual private gateway to extend your Local Zone. This confi
 
 ### AWS Private Link
 
-
 AWS PrivateLink provides private connectivity between virtual private clouds (VPCs), supported "AWS services", and your on-premises networks without exposing your traffic to the public internet. Interface VPC endpoints, powered by PrivateLink, connect you to services hosted by AWS Partners and supported solutions available in AWS Marketplace.
 
-AWS PrivateLink is a highly available, scalable technology that you can use to privately connect your VPC to services as if they were in your VPC. You do not need to use an internet gateway, NAT device, public IP address, AWS Direct Connect connection, or AWS Site-to-Site VPN connection to allow communication with the service from your private subnets. Therefore, you control the specific API endpoints, sites, and services that are reachable from your VPC.
+AWS PrivateLink is a highly available, scalable technology that you can use to privately connect your VPC to services as if they were in your VPC. You do not need to use an internet gateway, NAT device, public IP address, 
+
+AWS Direct Connect connection, or AWS Site-to-Site VPN connection to allow communication with the service from your private subnets. Therefore, you control the specific API endpoints, sites, and services that are reachable from your VPC.
 
 ==> The security team require that traffic between the EC2 instances and AWS services must not traverse the public internet.
 A "VPC endpoint" enables private connections between your VPC and supported AWS services and VPC endpoint services powered by AWS PrivateLink. A gateway endpoint is used for Amazon S3 and Amazon DynamoDB. You specify a gateway endpoint as a route table target for traffic that is destined for the supported AWS services.

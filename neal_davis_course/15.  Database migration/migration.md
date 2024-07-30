@@ -1,5 +1,9 @@
 ### Discovery Service
 
+* Plan  Migration
+* Check Migration Status
+* Export utilization and performance data
+
 AWS Application Discovery Service helps you plan your migration to the AWS cloud by collecting usage and configuration data about your on-premises servers and databases. Application Discovery Service is integrated with AWS Migration Hub and AWS Database Migration Service Fleet Advisor. 
 
 Migration Hub simplifies your migration tracking as it aggregates your migration status information into a single console.
@@ -7,6 +11,8 @@ Use DMS Fleet Advisor to assess migrations options for database workloads.
 
 Using Application Discovery Service APIs, you can export the system performance and utilization data for your discovered servers. Input this data into your cost model to compute the cost of running those servers in AWS. Additionally, you can export data about the network connections that exist between servers. 
 
+
+Is primarily used to track the migration status of your on-premises applications from the Migration Hub console in your home Region. This service is not capable of doing the actual migration.
 
 https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html
 
@@ -24,6 +30,8 @@ You can use AWS DMS to migrate data to an Amazon DynamoDB table. Amazon DynamoDB
 
 
 ### Application Migration Service
+Lift and shift
+Replication agent
 
 ### SMS
     Agent Less Service

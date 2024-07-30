@@ -1,3 +1,4 @@
+
 ### AWS Guard Duty
 
 An intelligent "threat detection service". It analyzes billions of events across your AWS accounts from AWS CloudTrail (AWS user and API activity in your accounts), Amazon VPC Flow Logs (network traffic data), and DNS Logs (name query patterns).
@@ -25,6 +26,9 @@ Amazon Macie allows you to achieve the following:
   * Prevents data loss
 
 Data source can be CloudTrail or S3 objects
+
+Amazon Macie generates two categories of findings: policy findings and sensitive data findings. A policy finding is a detailed report of a potential policy violation or issue with the security or privacy of an Amazon S3 bucket. Macie generates these findings as part of its ongoing monitoring activities for your Amazon S3 data. A sensitive data finding is a detailed report of sensitive data in an S3 object. Macie generates these findings when it discovers sensitive data in S3 objects that you configure a sensitive data discovery job to analyze.
+
 
 ### AWS Inspector
 
@@ -97,11 +101,11 @@ AWS Trusted Advisor draws upon best practices learned from serving hundreds of t
 
 - Alerts when best practices are not followed
 
---
+
+### Quota Monitoring with the help of Trusted Advisor
 
 AWS has an example of the implementation of Quota Monitor CloudFormation template that you can deploy on your AWS account. The template uses an AWS Lambda function that runs once every 24 hours. The Lambda function refreshes the AWS Trusted Advisor Service Limits checks to retrieve the most current utilization and quota data through API calls. Amazon CloudWatch Events captures the status events from Trusted Advisor. It uses a set of CloudWatch Events rules to send the status events to all the targets you choose during initial deployment of the solution: an Amazon Simple Queue Service (Amazon SQS) queue, an Amazon Simple Notification Service (Amazon SNS) topic or a Lambda function for Slack notifications.
 
-"Quota monitoring"
 
 ### Cloud Trail (Please read it)
 
@@ -150,7 +154,7 @@ Amazon Comprehend is a natural language processing (NLP) service that uses machi
 ### Athena Federated Query
 If you have data in sources other than Amazon S3, you can use Athena Federated Query to query the data in place or build pipelines that extract data from multiple data sources and store them in Amazon S3. With Athena Federated Query, you can run SQL queries across data stored in relational, non-relational, object, and custom data sources.
 
-
+### AWS Systems Manager Run
 AWS Systems Manager Run command is designed to run commands across a large group of instances without having to SSH into all your instances and run the same command multiple times. You can easily run the same command to all the managed nodes as part of the workload, without having to maintain access keys or individual access for each instance.
 
 
@@ -208,3 +212,36 @@ Example:  You can use AWS Health to receive email notifications if you have AWS 
 
 https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html
 https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html
+
+
+### AWS Personal Health Dashboard
+EC2 instance went down suddenly. How to get notified about future such events?
+
+Create an Amazon EventBridge (Amazon CloudWatch Events) rule to check for AWS Personal Health Dashboard events that are related to Amazon EC2 instances. To send notifications, set an Amazon SNS topic as a target for the rule.
+
+AWS Personal Health Dashboard gives you information about events related to specific EC2 instances in each AWS accounts
+
+### EC2 instance down, possible causes
+* Elastic IP not assigned
+* Health check not configured correctly
+* Rules
+
+### Life cycle Hooks ASG
+When scale out event happens, then the instances start in "pending" state.
+
+You can attach a hook "autoscaling:EC2_INSTANCE_LAUNCHING" to ASG or create cloud watch event corres to hook, then instances move from  "pending" to "pending:wait"
+
+The action corresponding to hook executes, and then the instance move to "pending:proceed".
+When the instance is fully ready, then it's in the "Inservice" state
+
+Similarly for scale-in event, you can attach EC2_INSTANCE_TERMINATING event, and so on.
+
+Configure a CloudWatch Events rule for the EC2 Instance-terminate Lifecycle Action Auto Scaling Event with an associated Lambda function. Trigger the CloudWatch agent to push the application logs to cloudwatch logs and then resume the instance termination once all the logs are sent to CloudWatch Logs.
+
+### Slow VPN Connection Solution (multiple VPN'S)
+- Use AWS transit gateway
+- Use ECMP (equal-cost multi-path) routing
+- Multile VPN Tunnels (1.25 throughput per VPN)
+
+### BGP - Border gateway protocol
+

@@ -6,7 +6,7 @@ This service is designed to provide robust file storage for business application
 
 
 Integration with Microsoft Active Directory ensures businesses can easily manage user groups and access. Security is a top priority, with FSx offering end-to-end encryption in transit and at rest. Additionally, users benefit from fully managed backups, ensuring data integrity and availability.
-s
+
 
 In terms of EFS vs. FSx, the key attribute of the former is that it uses NFS, one of the first network file sharing protocols native to Unix and Linux. Windows has long provided an NFS client and server. Some Windows applications might not work on EFS or be feature-complete without access to a native Windows SMB file share.
 
