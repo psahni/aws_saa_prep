@@ -2,7 +2,7 @@
 
 
 ### Basics
-<img width="900" alt="image" src="https://github.com/user-attachments/assets/c55b16e3-d2f2-405d-822a-0656abe18ae6">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/c55b16e3-d2f2-405d-822a-0656abe18ae6">
 
 
 * Dependency issues can be reduced. One just needs docker env.
@@ -11,7 +11,7 @@
 * Layer of Docker
 * Layer of OS Kernal
 
-<img width="974" alt="image" src="https://github.com/psahni/aws_saa_prep/assets/84832/eef7f95f-d0f1-42d6-b88c-226ec3deaa80">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/f54be563-ff8d-4f0a-af92-5920ca7e4b75">
 
 * Each VM has own OS. So lot of resources are used
 * Docker containers are very light, and quickly starts
