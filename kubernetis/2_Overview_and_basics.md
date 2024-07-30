@@ -2,7 +2,7 @@
 
 
 ### Basics
-<img width="335" alt="image" src="https://github.com/user-attachments/assets/c55b16e3-d2f2-405d-822a-0656abe18ae6">
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/c55b16e3-d2f2-405d-822a-0656abe18ae6">
 
 
 * Dependency issues can be reduced. One just needs docker env.
