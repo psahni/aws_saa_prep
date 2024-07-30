@@ -2,7 +2,8 @@
 
 
 ### Basics
-<img width="733" alt="image" src="https://github.com/psahni/aws_saa_prep/assets/84832/b2e3d22f-3a33-4062-945b-40be5c7d1e95">
+<img width="335" alt="image" src="https://github.com/user-attachments/assets/c55b16e3-d2f2-405d-822a-0656abe18ae6">
+
 
 * Dependency issues can be reduced. One just needs docker env.
 * Docker utilizes Lxe containers
