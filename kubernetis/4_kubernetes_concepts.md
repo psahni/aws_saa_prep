@@ -70,9 +70,36 @@ Static Pods are managed directly by the kubelet daemon on a specific node, witho
 <a href='https://kubernetes.io/docs/concepts/workloads/pods/'>LINK</a>
 
 
+### Kubernetes – Images
 
 
+When we create a StatefulSet, pod Deployment, or any other object that includes a Pod template then the pull policy of all containers in that pod will be set to IfNotPresent by default if it is not explicitly specified. This specific policy causes Kubelet to skip pulling an image if it already exists. 
+
+The imagePullPolicy for any container and the tag associated with the image affects when the kubelet attempts to download or pull the specific image. They can even set values to the imagePullPolicy like IfNotPresent, Always, or Never. 
+
+imagePullPolicy: Always :- This Pull Policy defines that whenever we run this file to create the container, it will pull the same name again.
+
+https://www.geeksforgeeks.org/kubernetes-images/
+
+### Labels and Selectors
+* Suppose we want to know(query) how many pods with label "front-end" are running and what is the status
+
+```
+$ kubectl get pods --selector "app=frontend"
+```
+
+https://www.golinuxcloud.com/kubernetes-labels-selectors-annotations/
 
 
+### K8s Namespaces
 
+### K8s Contexts
 
+A context is the connection to a specific cluster (username/apiserver host) used by kubectl. You can manage multiple clusters that way. 
+
+You use multiple contexts to target multiple different Kubernetes clusters.You can quickly switch between clusters by using the 
+```kubectl config use-context command.```
+
+Namespaces are a way to divide cluster resources between multiple users (via resource quota).
+Namespaces are intended for use in environments with many users spread across multiple teams, or projects.
+Namespace is a logical partition inside a specific cluster to manage resources and constraints.

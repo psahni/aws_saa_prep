@@ -28,3 +28,21 @@ run an application in Kubernetes.
 * To check the releases
   `helm list`
   
+
+### Dir structure
+* charts.yaml
+* charts/
+* templates/
+  * _helpers.tpl
+  * deployment.yaml
+  * hpa.yaml
+  * ingress.yaml
+  * service.yaml
+  * serviceaccount.yaml
+* values.yaml
+
+
+### Links
+https://helm.sh/docs/topics/charts/
+https://www.freecodecamp.org/news/what-is-a-helm-chart-tutorial-for-kubernetes-beginners/
+https://www.youtube.com/watch?v=12ticXUqLkE

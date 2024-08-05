@@ -21,3 +21,15 @@ This interacts with the cloud provider (in cloud-based clusters), managing resou
 
 Together, kube-apiserver, kube-controller-manager, kube-scheduler, and etcd form what is known as the control plane. The control plane is responsible for making decisions about the cluster, and pushing it toward the desired state. kube-apiserver, kube-controller-manager, and kube-scheduler are processes and etcd is a database; all four are run by the Kubernetes Master.
 
+### Worker Node
+
+#### Kublet
+* It is mediator between master node(kube api server) and the worker node.
+* Node administration
+* Pod execution
+* The Kubernetes Kubelet serves as the main node agent for all nodes, running in both the control plane and the worker plane.
+* The Kubelet operates the deployment of pods to Kubernetes nodes. 
+* It receives commands from the API server and informs the container runtime to start and stop containers as needed.
+
+
+https://www.geeksforgeeks.org/what-is-kubelet-in-kubernetes/
