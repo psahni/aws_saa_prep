@@ -44,3 +44,8 @@ spec:
 * Edit the changes
 * `kubectl apply -f redis.yaml`
 
+### Watch your pods
+
+```
+  $ kubectl get pods -w
+```

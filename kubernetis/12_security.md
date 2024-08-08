@@ -111,9 +111,21 @@ req -> Node auth -> RBAC Webhook
 * As soon as a module allows the requests, it is served
 
 
-### RBAC
+* Control access to resources in kubernetes clustere
+* Apply Policies and rules
+* kube/config configuration
+* `kubectl config view`
+* Certification authority
+* kube config will reference the public key of the CA
+* Use of key to ensure only the right user or server have access to kube api
+* K8s does not manage user or group, instead it creates certificates which are authorized by CA
 
-* How to create Role
+### Enable RBAC
+ 
+ RBAC is enabled in your cluster through the `--authorization-mode=RBAC` option in your Kubernetes API server. You can check this by executing the command `kubectl api-versions`; if RBAC is enabled you should see the API version `.rbac.authorization.k8s.io/v1`
+
+
+### How to create Role
 
 `developer-role.yaml`
 
@@ -123,9 +135,9 @@ req -> Node auth -> RBAC Webhook
 
 ```yaml
 apiVersion
-Kind
-metadata
-	name
+kind: Role
+metadata:
+	name:
 rules:
 - apiGroups:
   resources: ["pods"]
@@ -150,6 +162,24 @@ $ kubectl auth can-i create deployments
   $ kubectl describe <role_name>
 ```
 
+#### Role binding full example
+
+```
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: example-rolebinding
+  namespace: mynamespace
+subjects:
+- kind: User
+  name: example-user
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: example-role
+  apiGroup: rbac.authorization.k8s.io
+```
+
 ### Cluster Roles
 For node permissions
 
@@ -162,3 +192,5 @@ For node permissions
 
 
 
+### References
+https://medium.com/containerum/configuring-permissions-in-kubernetes-with-rbac-a456a9717d5d

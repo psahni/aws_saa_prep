@@ -103,3 +103,24 @@ You use multiple contexts to target multiple different Kubernetes clusters.You c
 Namespaces are a way to divide cluster resources between multiple users (via resource quota).
 Namespaces are intended for use in environments with many users spread across multiple teams, or projects.
 Namespace is a logical partition inside a specific cluster to manage resources and constraints.
+
+
+### ETCD
+* Key value store - distributed
+* Stores info about nodes, pods, accounts etc
+* It is on the master node
+* get deployments, get pods, etc..this type information comes from etcd
+
+### API Server
+* Scheduler, Kubelet, controller manager interact with api server for updates
+* API server authenticates and validates the request, fetch information from etcd cluster and gives back response
+* Client can send post request also
+
+### Controller manager
+* Monitors the state of various components with in the system
+* Brings the system to desired state of functioning
+* Node controller - monitors the health of node, every 5 seconds
+* Puts the node into unreachable after 40 seconds, and then it gives 5 mins to come back
+* if the node does not come back, then it removes the pod from that node, and provisions them into another one.
+
+* Repliction controller - Monitor state of replicas, if a pod dies, it creates another one.

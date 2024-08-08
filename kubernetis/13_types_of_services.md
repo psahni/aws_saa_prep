@@ -12,15 +12,19 @@
 
 2. Node Port
   * NodePort to expose the application to the internet from where end users can access the application which is running inside the pod of kubernetes cluster.
-  * If you want to expose the pods to external and also want to use it for inside the cluster then you can use NodePort.
-  * If you need to expose the application like web-applications then you can use the NodePort Serivce
+  * Exposes Node
+  * Can expose only one service
+  * Not the recommended way
 
 
-3. Load Balancer
+3. Load Balancer (Recommended Way, More recommended is Ingress)
   * Operates at Layer 4
   * Uses Round Robin
+  * Exposes multiple services at different IP address
   * For intelligent routing we use Ingress, which operates at Layer 7
+  
   * Ingress is like a LoadBalancer but more intelligent.
+  * You can redirect as per subdomain or value in the url (Network load balancer)
 
 
 --
