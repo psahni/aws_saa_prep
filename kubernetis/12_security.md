@@ -137,7 +137,7 @@ req -> Node auth -> RBAC Webhook
 apiVersion
 kind: Role
 metadata:
-	name:
+	name: example-role
 rules:
 - apiGroups:
   resources: ["pods"]
@@ -191,6 +191,16 @@ For node permissions
 ```
 
 
+### POD Security
+
+#### SecurityContext
+
+
+#### Image security
+
+* Use private repo
+* Create secret object for login
+* reference it in the container
 
 ### References
 https://medium.com/containerum/configuring-permissions-in-kubernetes-with-rbac-a456a9717d5d

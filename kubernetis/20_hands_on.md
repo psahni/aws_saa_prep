@@ -23,6 +23,8 @@
 >  kubectl delete services k8s-test-node-app
 ```
 
+### Run the service in browser
+
 ```
 >  kubectl expose  deployment k8s-test-node-app --type=NodePort --port=3000
 >  minikube service k8s-test-node-app (To know the URL)
