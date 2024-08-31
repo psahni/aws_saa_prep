@@ -92,7 +92,7 @@ resources:
 
 
 ### What happens when node goes down?
-
+Node controller will do it's job
 
 
 

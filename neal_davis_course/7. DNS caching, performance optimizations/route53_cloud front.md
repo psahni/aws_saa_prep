@@ -27,10 +27,13 @@ Revision is recommended through cheet sheets and videos when needed.
 
 https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/cross-region-dns-based-load-balancing-and-failover.html
 
-Alias = Point one domain to any aws domain (allows top level domains too)
+Alias = Point one domain to any other aws domain (allows top level domains too)
 DNS namespace(Zone Apex)
 
 CNAME = Point one domain to any other domain (not the top level domain like example.com)
+
+
+https://aws.amazon.com/blogs/networking-and-content-delivery/creating-disaster-recovery-mechanisms-using-amazon-route-53/
 
 ----
 

@@ -1,4 +1,4 @@
-### Imperative Approach
+### Imperative Approach (Minikube)
 
 ```
 > kubectl create deployment k8s-test-node-app --image=psahni/test-node-app
@@ -76,6 +76,6 @@
 ```
 > kubectl exec <pod_name> -- nslookup nginx
 
-> kubectl exec <pod_name> --wget -q0- http://ngnix  (nginx is the name of the service exposed via ClusterIP)
+> kubectl exec <pod_name> -- wget -q0- http://ngnix  (nginx is the name of the service exposed via ClusterIP)
 ```
 

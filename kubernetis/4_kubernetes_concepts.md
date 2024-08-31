@@ -73,7 +73,7 @@ Static Pods are managed directly by the kubelet daemon on a specific node, witho
 ### Kubernetes – Images
 
 
-When we create a StatefulSet, pod Deployment, or any other object that includes a Pod template then the pull policy of all containers in that pod will be set to IfNotPresent by default if it is not explicitly specified. This specific policy causes Kubelet to skip pulling an image if it already exists. 
+When we create a StatefulSet, pod Deployment, or any other object that includes a Pod template then the pull policy of all containers in that pod will be set to `IfNotPresent` by default if it is not explicitly specified. This specific policy causes Kubelet to skip pulling an image if it already exists. 
 
 The imagePullPolicy for any container and the tag associated with the image affects when the kubelet attempts to download or pull the specific image. They can even set values to the imagePullPolicy like IfNotPresent, Always, or Never. 
 

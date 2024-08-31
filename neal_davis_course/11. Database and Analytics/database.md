@@ -3,7 +3,7 @@ Aurora
     Fast
     RDBMS
     5 times faster
-    can have 15 replics across multiple Az's but within the region
+    can have 15 replics across multiple Az's but within the region (1 region = 15 replicas)
     Fault tolerance upto 3 regions
 
     Amazon Aurora Multi-Master adds the ability to scale out write performance across multiple Availability Zones and provides configurable read after write consistency.
@@ -13,15 +13,12 @@ Aurora
     Amazon Aurora Multi-Master adds the ability to scale out write performance across multiple Availability Zones and provides configurable read after write consistency.
 
     Global DB:- Cross Region Availability
-    Amazon Aurora global databases span multiple AWS Regions, enabling low latency global reads and providing fast recovery from the rare outage that might affect an entire AWS Region. An Aurora global database has a primary DB cluster in one Region, and up to five secondary DB clusters in different Regions.
+    Amazon Aurora global databases span multiple AWS Regions, enabling low latency global reads and providing fast recovery from the rare outage that might affect an entire AWS Region. An Aurora global database has a primary DB cluster in one Region, and up to five secondary DB clusters in different Regions. (Multi Region:- 1 Primary, 5 Secondary)
 
     An Aurora global database consists of one primary AWS Region where your data is written, and up to five read-only secondary AWS Regions. You issue write operations directly to the primary DB cluster in the primary AWS Region. Aurora replicates data to the secondary AWS Regions using dedicated infrastructure, with latency typically under a second.
 
     Multimaster - Require no downtime
     enables uptime-sensitive applications to achieve continuous write availability through instance failure. In the event of instance or Availability Zone failures, Aurora Multi-Master enables the Aurora database to maintain read and write availability with zero application downtime. 
-
-
-
 
 
 Mysql read replics can be cross region
@@ -31,8 +28,6 @@ Global Db
 
 ### Aurora Serverless
 Amazon Aurora Serverless is an on-demand, auto-scaling configuration for Amazon Aurora. The database automatically starts up, shuts down, and scales capacity up or down based on application needs. This is an ideal database solution for infrequently-used applications.
-
-
 
 Aws RDS Proxy
 
@@ -83,7 +78,7 @@ DynamoDB Global Tables
 
 Amazon Redshift
     Data warehouse
-    OLAP
+    OLAP (Analytics)
     BI
     3 copies
         Cont. backups
@@ -91,7 +86,7 @@ Amazon Redshift
     Complex Queries
     Repeat queries - Cache result (Team of scientists..)
 
-Elastic Map Reduce
+Elastic Map Reduce (Hadoop)
     Big Data
     managed service for hadoop
     BI

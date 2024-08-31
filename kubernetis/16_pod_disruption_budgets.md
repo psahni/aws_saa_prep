@@ -9,11 +9,9 @@ $ kubectl cordon node-1
   // node/node-1 cordoned
 ```
 
-
 * Existing Pods already running on the Node won't be affected by the cordon. They'll remain accessible and will still be hosted by the cordoned Node.
 
 * You can check which of your Nodes are currently cordoned with the get nodes command:
-
 
 ### Draining
 
@@ -38,6 +36,7 @@ The drain procedure first cordons the Node if you've not already placed one manu
 You can shutdown or destroy the Node once the drain's completed. You've freed the Node from its responsibilities to your cluster. The cordon provides an assurance that no new workloads have been scheduled since the drain completed.
 
 https://www.howtogeek.com/devops/cordons-and-drains-how-to-prepare-a-kubernetes-node-for-maintenance/
+(Very Good article)
 
 ### POD disruption Budgets
 
@@ -64,6 +63,8 @@ Hence there will be notifications
 * So the maintainance of node, led to pods going away from running state, and application down time
 * To solve, we need to set minimum num of pods, that must be always running, say 2
 
+#### Create PDP
+
 ```
   $ kubectl create pdb <app_name> --selector=<app_name> -min-available=2
 ```
@@ -73,12 +74,14 @@ Now, practical again
 ```
   k drain node-1 node-2 node-3 --delete-emptydir-data=true --ignore-daemonsets=true
 ```
+
 * It will evit all pods except 2, and show error
 * Then you have to uncordon one or two nodes again
 * Then 2 pods will be rescheduled to those nodes
 * And then error will be gone, this can take some time
 
 After maintainance finished, you can uncorden the nodes and delete the pdb
+
 
 ```
   $ kubectl delete pdb/<app_name> --now

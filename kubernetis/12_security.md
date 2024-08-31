@@ -6,8 +6,6 @@ To stop the unauthorized access, vulnerabilities and potential attacks you need 
 * Network Security and Access Control.
 * Container Runtime and Security Considerations.
 
-
-
 ### Cluster Security
 
 ### Network Policy
@@ -61,9 +59,9 @@ Each cluster can have many namespaces
 contexts:
 - name: admin@production
   context:
-	cluster: production
-	user: admin
-	namespace: finance
+    cluster: production
+    user: admin
+    namespace: finance
 - name: bob@production
   context:
    cluster: production
@@ -111,7 +109,7 @@ req -> Node auth -> RBAC Webhook
 * As soon as a module allows the requests, it is served
 
 
-* Control access to resources in kubernetes clustere
+* Control access to resources in kubernetes cluster
 * Apply Policies and rules
 * kube/config configuration
 * `kubectl config view`
@@ -191,10 +189,26 @@ For node permissions
 ```
 
 
-### POD Security
+### POD Security Policy
 
+* Pod Security Policies are configurations that define specific security conditions that a pod must meet, in order to be accepted into a cluster. If the conditions are not met, said pod will be rejected.
+
+* Defined at the cluster level
+
+```yaml
+  runAsUser:
+    rule: MustRunAsNonRoot
+```
+
+[link](https://thenewstack.io/tutorial-create-a-kubernetes-pod-security-policy/)
 #### SecurityContext
 
+Security Context is a crucial feature for hardening your Kubernetes deployments. It allows you to implement many security best practices directly in your Pod and Container specifications, significantly improving your overall security posture.
+
+- containers in pods should not run as a root user. For any reason.
+- `runAsUser` and `runAsGroup` to a non-root user is an absolute must.
+- `readOnlyRootFilesystem`
+- 𝗮𝗹𝗹𝗼𝘄𝗣𝗿𝗶𝘃𝗶𝗹𝗲𝗴𝗲𝗘𝘀𝗰𝗮𝗹𝗮𝘁𝗶𝗼𝗻: Controls whether a process can gain more privileges than its parent process.
 
 #### Image security
 

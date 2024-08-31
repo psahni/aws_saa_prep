@@ -30,3 +30,7 @@ https://aws.amazon.com/blogs/architecture/converting-stateful-application-to-sta
 
 * Deep topic - Building an event-driven solution for AvalonBay property leasing and search
 https://aws.amazon.com/blogs/architecture/building-an-event-driven-solution-for-avalonbay-property-leasing-and-search/
+
+
+To Read
+https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html

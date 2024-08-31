@@ -29,20 +29,61 @@ run an application in Kubernetes.
   `helm list`
   
 
+* A `chart` is a collection of files that describe a related set of Kubernetes resources. A single chart might be used to deploy something simple, like a memcached pod, or something complex, like a full web app stack with HTTP servers, databases, caches, and so on.
+
+* A chart is organized as a collection of files inside of a directory. The directory name is the name of the chart (without versioning information). Thus, a chart describing WordPress would be stored in a wordpress/ directory.
+
 ### Dir structure
 * charts.yaml
+  apiVersion 
+  appVersion
+
+
+* values.yaml
 * charts/
 * templates/
   * _helpers.tpl
+  
   * deployment.yaml
-  * hpa.yaml
-  * ingress.yaml
   * service.yaml
+  * ingress.yaml
+
+  * hpa.yaml
   * serviceaccount.yaml
-* values.yaml
+
+
+
+### Hands
+* $ helm create quiz-application
+* $ cd quiz-..
+* $ tree
+* Open charts.yaml. (It containes apiVersion, name, description, type, appVersion, type)
+* Open values.yaml
+* It has similar configuration as of POD
+  ```
+  image:
+    repository: psahni/quiz-application
+    pullPolicy: IfNotPresent
+    tag: latest
+  ```
+* We leave other files as it is
+* Install: `helm package .`
+* `helm install quiz-application ./package-path` (generated in prev step)
+* So helm is packaged, you can push it and use it elsewhere to install (distribution)
+* K8s resources will be created
+* The helm install command will output some commands to run, to get the application url
+* This will create k8s deployment, service and pod.
+* You can check it with get commands
+* When done, stop the server and `helm uninstall quiz-application`
+
 
 
 ### Links
 https://helm.sh/docs/topics/charts/
+
 https://www.freecodecamp.org/news/what-is-a-helm-chart-tutorial-for-kubernetes-beginners/
+
 https://www.youtube.com/watch?v=12ticXUqLkE
+
+
+https://github.com/Azure-Samples/helm-charts/tree/master

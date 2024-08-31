@@ -33,3 +33,15 @@ Together, kube-apiserver, kube-controller-manager, kube-scheduler, and etcd form
 
 
 https://www.geeksforgeeks.org/what-is-kubelet-in-kubernetes/
+
+
+### Container Run time Interface(CRI)
+https://overcast.blog/understanding-and-using-kubernetes-container-runtime-79a88ab1661c
+
+* The Container Runtime Interface (CRI) enables Kubernetes to support various container runtimes, such as Docker, containerd, and CRI-O, ensuring flexibility and extensibility. 
+
+*  Traditionally, Docker was the go-to container runtime for Kubernetes. However, with the evolution of the Kubernetes ecosystem, Docker’s role has shifted. Kubernetes now uses Docker’s container runtime component, containerd, bypassing Docker's higher-level functionalities.
+
+* `containerd`: Emerging as a core component in the container ecosystem, `containerd` manages the complete container lifecycle. It's optimized for simplicity and efficiency in Kubernetes environments.
+
+![alt text](containerd.png)
