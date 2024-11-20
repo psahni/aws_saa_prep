@@ -12,5 +12,3 @@ An Amazon Load Balancer has more than one IP address. DNS queries will usually r
 
 
 Indeed the second method works best. It is an awkward interface but after messing around a bit I was able to create two Alias records i.e example.sample.com pointing to separate load balancers. 
-
-You can

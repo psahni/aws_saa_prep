@@ -27,10 +27,12 @@ spec:
 * Can communicate with the main container via localhost
 * Starts, stops, and scales with the main container
 
+#### Side Car Examples
 * Ex: Logging and monitoring
 * Service mesh implementations (e.g., Istio)
 * Security (e.g., encryption, authentication)
 * Configuration management
+
 
 ```yaml
 apiVersion: v1

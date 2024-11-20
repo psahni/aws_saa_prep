@@ -2,7 +2,7 @@
 
 * Create K8s Secrests Menifest
 
-```
+```yaml
 apiVersion: v1
 kind: Secret
 metadata:
@@ -16,7 +16,7 @@ data:
 
 Then in mysql deployment file, you can give secret key password:-
 
-```
+```yaml
 ..
 spec:
   containers:
@@ -54,7 +54,7 @@ spec:
 ```
 
 * You can use configMap for POD that mounts a ConfigMap in a volume
-* 
+
 
 ### References
 https://www.baeldung.com/ops/kubernetes-configmaps-secrets

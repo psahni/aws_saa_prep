@@ -1,6 +1,6 @@
 Pod and node affinity in Kubernetes are features that allow you to control where pods are scheduled based on specific criteria. These features provide more flexibility and control over pod placement compared to simple node selectors. Let's explore both concepts:
 
-1. Pod Affinity/Anti-Affinity:
+### 1. Pod Affinity/Anti-Affinity:
 
 Pod affinity and anti-affinity allow you to specify rules for how pods should be scheduled relative to other pods.
 
@@ -36,7 +36,7 @@ spec:
 
 This configuration ensures that the web-pod is scheduled on a node that already has a pod with the label "app=cache".
 
-2. Node Affinity:
+### 2. Node Affinity:
 
 Node affinity allows you to constrain which nodes your pod can be scheduled on based on node labels.
 

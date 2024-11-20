@@ -10,6 +10,11 @@ This is the frontend server for the control plane, handling API requests.
 ### etcd
 This is the database where Kubernetes stores all its information: what nodes exist, what resources exist on the cluster, and so on.
 
+- Usernames and passwords
+- State of cluster data: State of pods
+- Can be setup outside of master node too
+
+
 ### kube-scheduler
 This decides where to run newly created Pods.
 

@@ -162,7 +162,7 @@ $ kubectl auth can-i create deployments
 
 #### Role binding full example
 
-```
+```yaml
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:

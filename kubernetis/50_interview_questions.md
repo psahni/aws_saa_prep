@@ -44,7 +44,7 @@ https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-w
 * Command
 * Http request
 
-```
+```yaml
 livenessProbe:
   exec:
     command:
@@ -55,7 +55,7 @@ livenessProbe:
   periodSeconds: 10
 ```
 
-```
+```yaml
 readinessProbe:
   httpGet:
     path: /user-app/health-check
@@ -66,7 +66,7 @@ readinessProbe:
 
 ### Resources: Request and Memory
 
-```
+```yaml
 resources:
   requests:
     memory: "128Mi" // 128 MebiByte
@@ -82,6 +82,8 @@ resources:
 * The Always restart policy is the default policy in Kubernetes. So if we create a Pod without setting the restartPolicy field, then Kubernetes will automatically set it to Always.
 
 * By using this policy, containers will restart when they terminate, regardless of their exit status. In other words, this policy doesn’t care why the container exited, whether it is a successful completion or an error. It will always make sure that the container is running.
+
+---------------------------------------------------------------------------------------------------------
 
 * This policy is useful for containers with applications that need to be always running like web servers. So the policy can ensure these containers are always available.
 

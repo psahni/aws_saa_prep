@@ -1,15 +1,13 @@
-
-
 CIDR Blocks
 
 
 10.0.1.0/24 (Subnet) => Each Subnet Will have 255 addresses
 10.0.2.0/24 (Subnet) => Each Subnet Will have 255 addresses
-...
+
 
 CIDR blocks can only be setup once
 
-------------------------------------------------
+----------------------------------------------------------
 
 Create VPC
     10.0.0.0/16

@@ -11,5 +11,37 @@ Here is a simple example where an Ingress sends all its traffic to one Service:
 You must have an Ingress controller to satisfy an Ingress. Only creating an Ingress resource has no effect.
 
 
+### Features
 
-https://kubernetes.io/docs/concepts/services-networking/ingress/
+* URL rewriting
+* Authentication
+* Rate limiting
+* Canary deployments
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: example-ingress
+spec:
+  rules:
+  - host: myapp.example.com
+    http:
+      paths:
+      - path: /api
+        pathType: Prefix
+        backend:
+          service:
+            name: api-service
+            port: 
+              number: 80
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: web-service
+            port: 
+              number: 80
+```
+[Good]
+https://dev.to/vivekanandrapaka/istio-ingress-gateway-vs-istio-gateway-vs-kubernetes-ingress-5hgg

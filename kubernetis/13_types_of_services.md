@@ -16,6 +16,13 @@
   * Can expose only one service
   * Not the recommended way
 
+  When you use this kind of service object, kubernetes would create a random port in the range of 30000-32768 on each of the nodes and you can access the backend pod by typing the IP address of the Node followed by the port as follows:
+
+  http://192.168.126.8:32768
+
+
+  If you have multiple nodes, each node will have it own IP and you would need to use the IP address and the port number to access your workload. This is good for testing purposes and local development, but not ideal for real world scenarios.
+
 
 3. Load Balancer (Recommended Way, More recommended is Ingress)
   * Operates at Layer 4
